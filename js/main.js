@@ -1,7 +1,20 @@
 $(document).ready(function() {
   const hamburger = $('.hamburger');
+  const submenuToggler = $('.submenu-toggler');
+
+  //Animate hamburger button
   hamburger.click(function() {
     $(this).toggleClass('is-active');
+  });
+
+  //Toggle nav submenu
+
+  submenuToggler.click(function(e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .next()
+      .slideToggle(300);
   });
   // // EASE SCROLL
 
