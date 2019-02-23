@@ -28,7 +28,7 @@ $text-main-color: $gray-700;
     font-family: $gotham-rounded-bold;
     text-transform: uppercase;
     position: relative;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
     &:hover {
       background: $bg-color-primary;
     }
@@ -36,21 +36,14 @@ $text-main-color: $gray-700;
       color: $text-color-primary;
     }
     .submenu-toggler {
-      font-size: 1.5rem;
+      font-size: 2rem;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 22px;
 
-      // &-down {
-      //   top: 2px;
-      //   left: 3px;
-      // }
-
       &-right {
         color: $text-color-secondary;
-        // top: 0;
-        // left: 3px;
       }
     }
   }
@@ -160,7 +153,7 @@ $text-main-color: $gray-700;
     }
 
     .nav-link {
-      padding: 0 10px !important;
+      padding: 0 9px !important;
       display: inline-block;
       border-bottom: none;
       text-transform: none;
@@ -170,24 +163,32 @@ $text-main-color: $gray-700;
         color: $bg-color-primary;
         background: none;
       }
-      .submenu-toggler-down {
-        font-size: inherit;
-        top: 1px;
+      .submenu-toggler {
+        position: relative;
+        top: 8px;
+        left: 3px;
+        &-down {
+          font-size: inherit;
+        }
+        &-right {
+          top: 16px;
+          left: 21px;
+        }
       }
     }
 
     .submenu {
       list-style: none;
       padding: 0;
-      display: block;
+      display: none;
       position: absolute;
       top: 100%;
-      left: 0;
+      left: 22%;
       .nav-link {
-        padding: 0;
+        padding: 12px 0 !important;
         text-transform: none;
         color: lighten($text-main-color, 44%);
-
+        position: relative;
         &.active {
           color: $text-main-color;
         }
@@ -200,15 +201,21 @@ $text-main-color: $gray-700;
         }
       }
       &-level-2 {
+        position: absolute;
+        top: 0;
+        left: 150%;
+        width: 400px;
         columns: 2;
-        border-bottom: 1px solid $text-color-tertiary;
+        border-bottom: none;
+        padding-top: 11px;
         .nav-link {
           border-bottom: none;
-          padding: 0;
+          padding: 6px 0 !important;
+          color: $text-main-color !important;
 
           &:hover {
             background: none;
-            color: $text-color-primary !important;
+            color: lighten($text-main-color, 44%) !important;
           }
         }
       }
@@ -230,6 +237,13 @@ $text-main-color: $gray-700;
     .navbar-brand {
       margin-right: 88px;
     }
+    .submenu {
+      left: 30%;
+
+      &-level-2 {
+        left: 150%;
+      }
+    }
   }
 }
 
@@ -240,6 +254,13 @@ $text-main-color: $gray-700;
     }
     .nav-link {
       padding: 0 12px !important;
+    }
+    .submenu {
+      left: 24%;
+
+      &-level-2 {
+        left: 150%;
+      }
     }
   }
 }
