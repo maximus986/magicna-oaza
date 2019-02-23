@@ -1,6 +1,8 @@
 $(document).ready(function() {
+  //Target DOM elements
   const hamburger = $('.hamburger');
-  const submenuToggler = $('.submenu-toggler');
+  const submenuTogglerDown = $('.submenu-toggler-down');
+  const submenuTogglerRight = $('.submenu-toggler-right');
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -8,14 +10,23 @@ $(document).ready(function() {
   });
 
   //Toggle nav submenu
-
-  submenuToggler.click(function(e) {
+  submenuTogglerDown.click(function(e) {
     e.preventDefault();
     $(this)
       .parent()
       .next()
       .slideToggle(300);
+    $(this).toggleClass('fa-angle-down fa-angle-up');
   });
+  submenuTogglerRight.click(function(e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .next()
+      .slideToggle(300);
+    $(this).toggleClass('fa-angle-double-right fa-angle-double-left');
+  });
+
   // // EASE SCROLL
 
   // $(document).on('click', 'a[href^="#"]', function (event) {

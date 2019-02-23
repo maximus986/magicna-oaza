@@ -1139,6 +1139,7 @@ img {
   border-bottom: 1px solid #ffc302;
   font-family: "GothamRounded-Bold";
   text-transform: uppercase;
+  position: relative;
   transition: 0.5s linear; }
   .main-header .nav-link:hover {
     background: #ff151f; }
@@ -1146,12 +1147,12 @@ img {
     color: #ff151f; }
   .main-header .nav-link .submenu-toggler {
     font-size: 1.5rem;
-    position: relative;
-    top: 2px;
-    left: 3px; }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px; }
     .main-header .nav-link .submenu-toggler-right {
-      color: #8759f2;
-      top: 0; }
+      color: #8759f2; }
 .main-header .submenu {
   list-style: none;
   padding: 0;
@@ -1229,7 +1230,7 @@ img {
     .main-header .nav-link:hover {
       color: #ff151f;
       background: none; }
-    .main-header .nav-link .submenu-toggler {
+    .main-header .nav-link .submenu-toggler-down {
       font-size: inherit;
       top: 1px; }
   .main-header .submenu {
