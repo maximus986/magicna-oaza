@@ -1,1 +1,111 @@
+$bg-color-primary: $primary;
+$text-color-primary: $primary;
+$text-color-secondary: $secondary;
+$text-color-tertiary: $tertiary;
+$text-white: $white;
+$text-main-color: $gray-700;
 
+.main-header {
+  .navbar-brand {
+    max-width: 31%;
+  }
+
+  #main-menu {
+    margin: 0 -15px;
+  }
+
+  .navbar-nav {
+    margin: 0 -10px;
+  }
+
+  .nav-link {
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid $text-color-tertiary;
+    font-family: $gotham-rounded-bold;
+    text-transform: uppercase;
+    transition: 0.5s linear;
+    &:hover {
+      background: $bg-color-primary;
+    }
+    &.new {
+      color: $text-color-primary;
+    }
+    .submenu-toggler {
+      font-size: 1.5rem;
+      position: relative;
+      top: 2px;
+      left: 3px;
+    }
+  }
+
+  .submenu-1 {
+    list-style: none;
+    padding: 0;
+    display: none;
+    .nav-link {
+      padding: 5px 20px;
+      text-transform: none;
+      color: lighten($text-main-color, 44%);
+
+      &.active {
+        color: $text-main-color;
+      }
+
+      .category-img-wrapper {
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        line-height: 33px;
+      }
+    }
+  }
+
+  .nav-link:hover .submenu-1 {
+    display: block;
+  }
+
+  .nav-action {
+    .search-icon,
+    .favorites-icon,
+    .small-cart-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .small-cart-icon {
+      position: relative;
+      .small-cart-products-number {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: -7px;
+        font-size: 0.625rem;
+        color: $text-white;
+        font-family: $gotham-rounded-bold;
+        line-height: 1rem;
+        text-align: center;
+        background: $bg-color-primary;
+      }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .main-header {
+    .nav-action {
+      .search-icon,
+      .favorites-icon,
+      .small-cart-icon {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}

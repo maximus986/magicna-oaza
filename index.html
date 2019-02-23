@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Site Titile</title>
+    <title>MagicnaOaza</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="" />
+    <meta name="author" content="Aleksandar Maksimovic" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
     <!--iOS compatibile-->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Site Title" />
-    <link rel="apple-touch-icon" href="putanja do ikonice favicon li neke" />
+    <meta name="apple-mobile-web-app-title" content="MagicnaOaza" />
+    <link rel="apple-touch-icon" href="apple-icon-57x57.png" />
 
     <!--Android compatibile-->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="aplication-name" content="Site Title" />
-    <link rel="icon" type="icon/png" href="putanja do ikonice favicon li neke" />
+    <meta name="aplication-name" content="MagicnaOaza" />
+    <link rel="icon" type="icon/png" href="android-icon-48x48.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="stylesheet" href="css/fonts.css" />
@@ -38,6 +41,134 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Header start -->
+    <header class="main-header fixed-top py-2">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light p-0">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Magicna oaza logo" />
+          </a>
+          <div class="nav-action d-flex align-items-center ml-auto order-md-last">
+            <a href="#" class="btn btn-primary btn-sm nav-action-btn">
+              <span>Klub </span>
+              <span class="d-none d-xl-inline">Magzijevih </span>
+              <span class="d-none d-xl-inline">Drugara</span>
+            </a>
+            <div class="search-wrapper mx-2 mx-lg-3">
+              <a href="#" class="search-icon">
+                <img src="img/nav-action-img/img-01.png" alt="Search-icon" />
+              </a>
+            </div>
+            <a href="#" class="favorites-icon d-inline-block mr-2 mr-lg-3">
+              <img src="img/nav-action-img/img-02.png" alt="Favorites icon" />
+            </a>
+            <div class="small-cart-wrapper mr-3 mr-xm-4 mr-lg-3">
+              <a href="#" class="small-cart-icon">
+                <img src="img/nav-action-img/img-03.png" alt="cart icon" />
+                <span class="small-cart-products-number">2</span>
+              </a>
+            </div>
+          </div>
+
+          <button class="hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#main-menu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  >Prodavnica <span class="fa fa-angle-down submenu-toggler"></span><span class="sr-only">(current)</span></a
+                >
+                <ul class="submenu-1">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 pr-2">
+                        <img src="img/nav-img/img-01.png" alt="Igračke" />
+                      </figure>
+                      <span>Igračke <span class="fa fa-angle-double-right submenu-toggler pl-2"></span></span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 pr-2">
+                        <img src="img/nav-img/img-02.png" alt="Dvorište" />
+                      </figure>
+                      <span>Dvorište</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 pr-2">
+                        <img src="img/nav-img/img-03.png" alt="Plaža" />
+                      </figure>
+                      <span>Plaža</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 pr-2">
+                        <img src="img/nav-img/img-04.png" alt="Za školu" />
+                      </figure>
+                      <span>Za školu</span>
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a href="#" class="nav-link">Za dečake</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Za devojčice</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Za bebe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Edukativne igračke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Trotineti i Skejtbordovi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Lego Kocke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Drvene igračke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Muzičke igračke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Plišane igračke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Rođendanski program</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Novogodišnji paketići</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Veleprodaja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Akcija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new" href="#">Novo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header end -->
+
     <!--SCRIPTS goes here-->
     <!--First jquery, then popper and finaly bootstrap-->
     <script src="js/jquery.min.js" type="text/javascript"></script>
