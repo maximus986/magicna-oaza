@@ -3,6 +3,8 @@ $(document).ready(function() {
   const hamburger = $('.hamburger');
   const submenuTogglerDown = $('.submenu-toggler-down');
   const submenuTogglerRight = $('.submenu-toggler-right');
+  const submenuL1 = $('.submenu-level-1');
+  const submenuL2 = $('.submenu-level-2');
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -17,13 +19,17 @@ $(document).ready(function() {
       .next()
       .slideToggle(300);
     $(this).toggleClass('fa-angle-down fa-angle-up');
+    if (submenuL1.find('.submenu-toggler-right').hasClass('fa-angle-double-left')) {
+      submenuL2.hide();
+      submenuL1.find('.submenu-toggler-right').toggleClass('fa-angle-double-left fa-angle-double-right');
+    }
   });
   submenuTogglerRight.click(function(e) {
     e.preventDefault();
     $(this)
       .parent()
       .next()
-      .slideToggle(300);
+      .slideToggle(100);
     $(this).toggleClass('fa-angle-double-right fa-angle-double-left');
   });
 
