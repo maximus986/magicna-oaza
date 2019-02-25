@@ -221,9 +221,9 @@ $text-main-color: $gray-700;
       border-bottom: none;
       text-transform: none;
       position: relative;
-      transition: 0.5s linear;
+      transition: 0.3s linear;
       &:hover {
-        color: $text-main-color !important;
+        color: rgba($text-main-color, 0.44) !important;
         background: none;
       }
 
@@ -262,6 +262,14 @@ $text-main-color: $gray-700;
           height: 33px;
           text-align: center;
           line-height: 33px;
+        }
+      }
+
+      &-level-1 {
+        .nav-link {
+          &:hover {
+            color: $text-main-color !important;
+          }
         }
       }
 

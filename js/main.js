@@ -10,6 +10,7 @@ $(document).ready(function() {
   const smallCartIcon = $('.small-cart-icon');
   const overlay = $('.overlay-body');
   const smallCart = $('.small-cart-content');
+  const smallCartProducts = $('.small-cart-products');
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -58,6 +59,11 @@ $(document).ready(function() {
   overlay.click(function() {
     $(this).hide();
     smallCart.removeClass('active');
+  });
+
+  //Custom scrollbar
+  smallCartProducts.mCustomScrollbar({
+    theme: 'minimal-dark'
   });
 
   // // EASE SCROLL

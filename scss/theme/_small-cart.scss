@@ -12,7 +12,7 @@ $border-color: $gray-400;
   background: $bg-white;
   z-index: 10000;
   padding: 5px 10px;
-  transition: 0.7s linear;
+  transition: 0.6s linear;
 
   &.active {
     right: 0;
@@ -39,6 +39,18 @@ $border-color: $gray-400;
     }
     .small-cart-product-detail {
       position: relative;
+
+      .small-cart-product-collection,
+      .small-cart-product-type {
+        a {
+          color: $text-main-color;
+          cursor: pointer;
+          transition: 0.3s linear;
+          &:hover {
+            color: rgba($text-main-color, 0.44);
+          }
+        }
+      }
     }
 
     .delete-product {
@@ -69,13 +81,68 @@ $border-color: $gray-400;
     position: absolute;
     left: calc(35% - 52px);
     bottom: 5px;
-    .small-cart-action-continue-btn {
+    .small-cart-action-btn-continue {
       background: darken($bg-gray-light-100, 10%);
       font-size: 1rem;
+      padding: 1rem 2.6rem;
     }
-    .small-cart-action-order-btn {
+    .small-cart-action-btn-order {
       font-size: 1.2rem;
       color: $text-white;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .small-cart-content {
+    width: 450px;
+    padding: 30px 15px;
+
+    .small-cart-products {
+      height: 45vh;
+      .delete-product {
+        right: 30px;
+        top: -8px;
+      }
+    }
+    .small-cart-product-img {
+      width: 30% !important;
+    }
+    .small-cart-product-detail {
+      width: 70% !important;
+    }
+
+    .small-cart-action {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      position: static;
+      left: auto;
+      bottom: auto;
+
+      .small-cart-action-btn-continue {
+        font-size: 1rem;
+        padding: 0.85rem 1.75rem;
+      }
+      .small-cart-action-btn-order {
+        font-size: 1.2rem;
+        padding: 0.7rem 4.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .small-cart-content {
+    width: 500px;
+    .small-cart-products {
+      height: 40vh;
+    }
+    .small-cart-price {
+      font-size: 1.5rem;
+      .small-cart-total-price {
+        font-size: 1.875rem;
+      }
     }
   }
 }
