@@ -1,10 +1,15 @@
 $(document).ready(function() {
   //Target DOM elements
   const hamburger = $('.hamburger');
-  const submenuTogglerDown = $('.submenu-toggler-down');
-  const submenuTogglerRight = $('.submenu-toggler-right');
+  const submenuTogglerL1 = $('.submenu-toggler-level-1');
+  const submenuTogglerL2 = $('.submenu-toggler-level-2');
   const submenuL1 = $('.submenu-level-1');
   const submenuL2 = $('.submenu-level-2');
+  const searchIcon = $('.search-icon');
+  const searchForm = $('.search-form');
+  const smallCartIcon = $('.small-cart-icon');
+  const overlay = $('.overlay-body');
+  const smallCart = $('.small-cart-content');
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -12,7 +17,7 @@ $(document).ready(function() {
   });
 
   //Toggle nav submenu
-  submenuTogglerDown.click(function(e) {
+  submenuTogglerL1.click(function(e) {
     e.preventDefault();
     $(this)
       .parent()
@@ -24,13 +29,35 @@ $(document).ready(function() {
       submenuL1.find('.submenu-toggler-right').toggleClass('fa-angle-double-left fa-angle-double-right');
     }
   });
-  submenuTogglerRight.click(function(e) {
+  submenuTogglerL2.click(function(e) {
     e.preventDefault();
     $(this)
       .parent()
       .next()
-      .slideToggle(100);
+      .fadeToggle();
     $(this).toggleClass('fa-angle-double-right fa-angle-double-left');
+  });
+
+  // Show header search from
+  searchIcon.click(function() {
+    $(this)
+      .next('.search-form')
+      .fadeToggle();
+  });
+
+  //Show small cart
+  smallCartIcon.click(function(e) {
+    $(this)
+      .next()
+      .addClass('active');
+    overlay.show();
+    searchForm.hide();
+    e.preventDefault();
+  });
+
+  overlay.click(function() {
+    $(this).hide();
+    smallCart.removeClass('active');
   });
 
   // // EASE SCROLL

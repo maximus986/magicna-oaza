@@ -1568,7 +1568,7 @@ pre {
   color: #494949;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #CFCFCF;
   border-radius: 2.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
@@ -2542,7 +2542,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f6f2ff; }
+    background-color: #f9f9f9; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -2740,7 +2740,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #9b9b9b;
-  border: 1px solid #ced4da;
+  border: 1px solid #CFCFCF;
   border-radius: 2.25rem; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -2911,7 +2911,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 2.5rem center/8px 10px;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 1px solid #CFCFCF;
   border-radius: 2.25rem;
   appearance: none; }
   .custom-select:focus {
@@ -2981,7 +2981,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #494949;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 1px solid #CFCFCF;
   border-radius: 2.25rem; }
   .custom-file-label::after {
     position: absolute;
@@ -3986,7 +3986,7 @@ input[type="button"].btn-block {
     z-index: 1;
     color: #494949;
     text-decoration: none;
-    background-color: #f6f2ff; }
+    background-color: #f9f9f9; }
   .list-group-item-action:active {
     color: #494949;
     background-color: #9b9b9b; }
@@ -5964,8 +5964,20 @@ button.bg-dark:focus {
 .w-25 {
   width: 25% !important; }
 
+.w-30 {
+  width: 30% !important; }
+
+.w-40 {
+  width: 40% !important; }
+
 .w-50 {
   width: 50% !important; }
+
+.w-60 {
+  width: 60% !important; }
+
+.w-70 {
+  width: 70% !important; }
 
 .w-75 {
   width: 75% !important; }
@@ -5979,8 +5991,20 @@ button.bg-dark:focus {
 .h-25 {
   height: 25% !important; }
 
+.h-30 {
+  height: 30% !important; }
+
+.h-40 {
+  height: 40% !important; }
+
 .h-50 {
   height: 50% !important; }
+
+.h-60 {
+  height: 60% !important; }
+
+.h-70 {
+  height: 70% !important; }
 
 .h-75 {
   height: 75% !important; }
