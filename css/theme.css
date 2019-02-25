@@ -1196,18 +1196,28 @@ img {
     color: #494949;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ffc302;
+    border: 1px solid #ff151f;
     border-radius: 2.25rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
+    .main-header .nav-action .search-form .form-control::placeholder {
+      font-family: "GothamRounded-Book"; }
   .main-header .nav-action .search-form .search-btn {
-    border: 2px solid #ffc302;
+    border: 1px solid #ff151f;
+    background: #fff;
+    color: #ff151f;
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 2.25rem;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
+    border-bottom-left-radius: 0;
+    transition: 0.3s linear; }
+    .main-header .nav-action .search-form .search-btn:hover {
+      background: #ffc302;
+      color: #fff; }
+    .main-header .nav-action .search-form .search-btn .fa-search {
+      font-size: 1.6rem; }
 .main-header .nav-action .small-cart-icon {
   position: relative; }
   .main-header .nav-action .small-cart-icon .small-cart-products-number {

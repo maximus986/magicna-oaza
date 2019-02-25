@@ -1568,7 +1568,7 @@ pre {
   color: #494949;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   border-radius: 2.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
@@ -1584,7 +1584,7 @@ pre {
     outline: 0;
     box-shadow: none; }
   .form-control::placeholder {
-    color: #6c757d;
+    color: #494949;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #9b9b9b;
@@ -2740,7 +2740,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #9b9b9b;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   border-radius: 2.25rem; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -2911,7 +2911,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 2.5rem center/8px 10px;
   background-color: #fff;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   border-radius: 2.25rem;
   appearance: none; }
   .custom-select:focus {
@@ -2981,7 +2981,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #494949;
   background-color: #fff;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   border-radius: 2.25rem; }
   .custom-file-label::after {
     position: absolute;

@@ -1,4 +1,5 @@
 $bg-color-primary: $primary;
+$bg-color-tertiary: $tertiary;
 $text-color-primary: $primary;
 $text-color-secondary: $secondary;
 $text-color-tertiary: $tertiary;
@@ -106,20 +107,34 @@ $text-main-color: $gray-700;
         color: #494949;
         background-color: #fff;
         background-clip: padding-box;
-        border: 1px solid $text-color-tertiary;
+        border: 1px solid $text-color-primary;
         border-radius: 2.25rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+
+        &::placeholder {
+          font-family: $gotham-rounded-book;
+        }
       }
 
       .search-btn {
-        border: 2px solid $text-color-tertiary;
+        border: 1px solid $text-color-primary;
+        background: #fff;
+        color: $text-color-primary;
         padding: 0.6rem 1.5rem;
         font-size: 1rem;
         line-height: 1.5;
         border-radius: 2.25rem;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        transition: 0.3s linear;
+        &:hover {
+          background: $bg-color-tertiary;
+          color: #fff;
+        }
+        .fa-search {
+          font-size: 1.6rem;
+        }
       }
     }
 
