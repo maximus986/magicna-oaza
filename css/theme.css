@@ -1142,7 +1142,8 @@ img {
   position: relative;
   transition: 0.3s linear; }
   .main-header .nav-link:hover {
-    background: #ff151f; }
+    background: #ff151f;
+    color: #fff !important; }
   .main-header .nav-link.new {
     color: #ff151f; }
   .main-header .nav-link .submenu-toggler {
@@ -1151,8 +1152,10 @@ img {
     top: 50%;
     transform: translateY(-50%);
     right: 22px; }
-    .main-header .nav-link .submenu-toggler-level-2 {
+    .main-header .nav-link .submenu-toggler-level-2, .main-header .nav-link .submenu-toggler-desktop-level-2 {
       color: #8759f2; }
+    .main-header .nav-link .submenu-toggler-desktop-level-1, .main-header .nav-link .submenu-toggler-desktop-level-2 {
+      display: none; }
 .main-header .submenu {
   list-style: none;
   padding: 0;
@@ -1195,9 +1198,7 @@ img {
     height: auto;
     color: #494949;
     background-color: #fff;
-    background-clip: padding-box;
     border: 1px solid #ff151f;
-    border-radius: 2.25rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
     .main-header .nav-action .search-form .form-control::placeholder {
@@ -1207,11 +1208,6 @@ img {
     background: #fff;
     color: #ff151f;
     padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 2.25rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     transition: 0.3s linear; }
     .main-header .nav-action .search-form .search-btn:hover {
       background: #ffc302;
@@ -1276,6 +1272,7 @@ img {
     border-bottom: none;
     text-transform: none;
     position: relative;
+    cursor: pointer;
     transition: 0.3s linear; }
     .main-header .nav-link:hover {
       color: rgba(73, 73, 73, 0.44) !important;
@@ -1284,17 +1281,27 @@ img {
       position: static;
       transform: translateY(0); }
       .main-header .nav-link .submenu-toggler-level-1 {
-        font-size: inherit; }
+        font-size: inherit;
+        display: none; }
       .main-header .nav-link .submenu-toggler-level-2 {
+        padding-left: 20px;
+        display: none; }
+      .main-header .nav-link .submenu-toggler-desktop-level-1 {
+        display: inline-block;
+        font-size: inherit; }
+      .main-header .nav-link .submenu-toggler-desktop-level-2 {
+        display: inline-block;
         padding-left: 20px; }
   .main-header .submenu {
     list-style: none;
     padding: 0;
     display: none;
     position: absolute;
-    top: 100%;
+    top: 40%;
     left: 22%;
-    min-width: 170px; }
+    padding-top: 60px;
+    min-width: 170px;
+    transition: 0.3s linear; }
     .main-header .submenu .nav-link {
       padding: 12px 0 !important;
       text-transform: none;
@@ -1312,11 +1319,11 @@ img {
     .main-header .submenu-level-2 {
       position: absolute;
       top: 0;
-      left: 115%;
+      left: 100%;
       min-width: 400px;
       columns: 2;
       border-bottom: none;
-      padding-top: 11px; }
+      padding-top: 60px; }
       .main-header .submenu-level-2 .nav-link {
         border-bottom: none;
         padding: 8px 0 !important;
@@ -1333,7 +1340,13 @@ img {
     width: calc(80% - 73.3px - 34.2px);
     left: 21%;
     top: 9%;
-    background: none; } }
+    background: none; }
+  .main-header .nav-item:hover > .submenu {
+    display: block; }
+  .main-header .nav-item:hover .nav-link > .submenu-toggler-desktop-level-1 {
+    transform: rotate(180deg); }
+  .main-header .submenu-level-1 > .nav-item:hover .nav-link > .submenu-toggler-desktop-level-2 {
+    transform: rotate(180deg); } }
 @media (min-width: 992px) {
   .main-header .navbar-brand {
     margin-right: 30px; }
@@ -1343,16 +1356,19 @@ img {
     left: 23%; }
     .main-header .submenu-level-2 {
       width: 500px;
-      left: 140%; } }
+      left: 100%;
+      padding-left: 10px; } }
 @media (min-width: 1200px) {
+  .main-header .container {
+    max-width: 1256px; }
   .main-header .navbar-brand {
     margin-right: 50px; }
   .main-header .nav-item {
     padding: 0 12px !important; }
   .main-header .submenu {
-    left: 22.5%; }
+    left: 20.5%; }
     .main-header .submenu-level-2 {
-      left: 140%; }
+      left: 100%; }
     .main-header .submenu .nav-item {
       padding-left: 0 !important;
       padding-right: 0 !important; } }
@@ -1363,7 +1379,7 @@ img {
   top: 0;
   right: -100%;
   background: #fff;
-  z-index: 10000;
+  z-index: 1100;
   padding: 5px 10px;
   transition: 0.6s linear; }
   .small-cart-content.active {

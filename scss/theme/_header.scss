@@ -32,6 +32,7 @@ $text-main-color: $gray-700;
     transition: 0.3s linear;
     &:hover {
       background: $bg-color-primary;
+      color: $text-white !important;
     }
     &.new {
       color: $text-color-primary;
@@ -43,8 +44,13 @@ $text-main-color: $gray-700;
       transform: translateY(-50%);
       right: 22px;
 
-      &-level-2 {
+      &-level-2,
+      &-desktop-level-2 {
         color: $text-color-secondary;
+      }
+      &-desktop-level-1,
+      &-desktop-level-2 {
+        display: none;
       }
     }
   }
@@ -100,15 +106,14 @@ $text-main-color: $gray-700;
       .form-group {
         margin: 0;
       }
+
       .form-control {
         padding: 0.6rem 2.5rem;
         font-size: 1rem;
         height: auto;
         color: #494949;
         background-color: #fff;
-        background-clip: padding-box;
         border: 1px solid $text-color-primary;
-        border-radius: 2.25rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
 
@@ -122,11 +127,6 @@ $text-main-color: $gray-700;
         background: #fff;
         color: $text-color-primary;
         padding: 0.6rem 1.5rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: 2.25rem;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         transition: 0.3s linear;
         &:hover {
           background: $bg-color-tertiary;
@@ -221,6 +221,7 @@ $text-main-color: $gray-700;
       border-bottom: none;
       text-transform: none;
       position: relative;
+      cursor: pointer;
       transition: 0.3s linear;
       &:hover {
         color: rgba($text-main-color, 0.44) !important;
@@ -232,8 +233,18 @@ $text-main-color: $gray-700;
         transform: translateY(0);
         &-level-1 {
           font-size: inherit;
+          display: none;
         }
         &-level-2 {
+          padding-left: 20px;
+          display: none;
+        }
+        &-desktop-level-1 {
+          display: inline-block;
+          font-size: inherit;
+        }
+        &-desktop-level-2 {
+          display: inline-block;
           padding-left: 20px;
         }
       }
@@ -244,9 +255,11 @@ $text-main-color: $gray-700;
       padding: 0;
       display: none;
       position: absolute;
-      top: 100%;
+      top: 40%;
       left: 22%;
+      padding-top: 60px;
       min-width: 170px;
+      transition: 0.3s linear;
 
       .nav-link {
         padding: 12px 0 !important;
@@ -276,11 +289,11 @@ $text-main-color: $gray-700;
       &-level-2 {
         position: absolute;
         top: 0;
-        left: 115%;
+        left: 100%;
         min-width: 400px;
         columns: 2;
         border-bottom: none;
-        padding-top: 11px;
+        padding-top: 60px;
         .nav-link {
           border-bottom: none;
           padding: 8px 0 !important;
@@ -309,6 +322,16 @@ $text-main-color: $gray-700;
         background: none;
       }
     }
+    .nav-item:hover > .submenu {
+      display: block;
+    }
+
+    .nav-item:hover .nav-link > .submenu-toggler-desktop-level-1 {
+      transform: rotate(180deg);
+    }
+    .submenu-level-1 > .nav-item:hover .nav-link > .submenu-toggler-desktop-level-2 {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -328,7 +351,8 @@ $text-main-color: $gray-700;
 
       &-level-2 {
         width: 500px;
-        left: 140%;
+        left: 100%;
+        padding-left: 10px;
       }
     }
   }
@@ -336,6 +360,9 @@ $text-main-color: $gray-700;
 
 @media (min-width: 1200px) {
   .main-header {
+    .container {
+      max-width: 1256px;
+    }
     .navbar-brand {
       margin-right: 50px;
     }
@@ -343,10 +370,10 @@ $text-main-color: $gray-700;
       padding: 0 12px !important;
     }
     .submenu {
-      left: 22.5%;
+      left: 20.5%;
 
       &-level-2 {
-        left: 140%;
+        left: 100%;
       }
 
       .nav-item {
