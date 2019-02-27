@@ -164,6 +164,15 @@ $spacers: map-merge(
     ),
     9: (
       $spacer * 9.8 //pt-lead
+    ),
+    10: (
+      $spacer * 11 //pt-lead
+    ),
+    11: (
+      $spacer * 12.8
+    ),
+    12: (
+      $spacer * 16.68
     )
   ),
   $spacers

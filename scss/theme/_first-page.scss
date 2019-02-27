@@ -1,0 +1,28 @@
+$bg-color-white: $white;
+$bg-color-tertiary: $tertiary;
+
+.main-content {
+  .hero {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      width: 100%;
+
+      .owl-dot span {
+        background: $bg-color-white;
+      }
+      .owl-dot.active span {
+        background: $bg-color-tertiary;
+      }
+    }
+  }
+}

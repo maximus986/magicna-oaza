@@ -8,6 +8,8 @@ $text-white: $white;
 $text-main-color: $gray-700;
 
 .main-header {
+  background: rgba($bg-white, 0.7);
+  transition: 0.3s linear;
   .navbar-brand {
     max-width: 35%;
     margin-right: 0.5rem;
@@ -15,13 +17,14 @@ $text-main-color: $gray-700;
 
   #main-menu {
     margin: 0 -15px;
-    max-height: 85vh;
+    max-height: 100vh;
     overflow: scroll;
   }
 
   .navbar-nav {
     margin: 0 -10px;
     border-top: 1px solid $text-color-tertiary;
+    background: $bg-white;
   }
 
   .nav-link {
@@ -250,6 +253,7 @@ $text-main-color: $gray-700;
     .navbar-nav {
       margin: 0;
       border-top: none;
+      background: none;
     }
     .nav-item {
       padding: 0 9px !important;

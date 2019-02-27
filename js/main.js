@@ -11,6 +11,19 @@ $(document).ready(function() {
   const overlay = $('.overlay-body');
   const smallCart = $('.small-cart-content');
   const smallCartProducts = $('.small-cart-products');
+  const owlCarousel = $('.owl-carousel');
+  const leadSlider = $('.lead-slider');
+  const header = $('.main-header');
+  const mainContent = $('.main-content');
+
+  //Set main-content margin-top depending on header's height
+  // $(window).resize(setMainMarginTop);
+  // setMainMarginTop();
+
+  // function setMainMarginTop() {
+  //   const headerHeight = header.height();
+  //   mainContent.css('marginTop', headerHeight);
+  // }
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -65,6 +78,32 @@ $(document).ready(function() {
   smallCartProducts.mCustomScrollbar({
     theme: 'minimal-dark'
   });
+
+  //Reduce header padding on scroll
+  $(window).scroll(function() {
+    animateHeader(); //Animate header on window scroll
+  });
+
+  animateHeader(); //Animate header on window load
+
+  //Header animation function
+  function animateHeader() {
+    const scroll = $(window).scrollTop();
+    if (scroll > 50) {
+      header.removeClass('py-2').css('background', 'rgba(255, 255, 255, 1)');
+    } else {
+      header.addClass('py-2').css('background', 'rgba(255, 255, 255, 0.7)');
+    }
+  }
+
+  //Sliders
+  if (owlCarousel.length > 0) {
+    leadSlider.owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true
+    });
+  }
 
   // // EASE SCROLL
 
