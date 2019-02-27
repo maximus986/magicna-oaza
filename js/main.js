@@ -13,6 +13,7 @@ $(document).ready(function() {
   const smallCartProducts = $('.small-cart-products');
   const owlCarousel = $('.owl-carousel');
   const leadSlider = $('.lead-slider');
+  const brandSlider = $('.brands-slider');
   const header = $('.main-header');
   const mainContent = $('.main-content');
 
@@ -102,6 +103,34 @@ $(document).ready(function() {
       items: 1,
       loop: true,
       autoplay: true
+    });
+    brandSlider.owlCarousel({
+      loop: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 3,
+          margin: 30
+        },
+        400: {
+          items: 4,
+          margin: 30
+        },
+        576: {
+          items: 6,
+          margin: 30
+        },
+        768: {
+          items: 8,
+          margin: 30
+        },
+        1200: {
+          items: 10,
+          margin: 50
+        }
+      }
     });
   }
 

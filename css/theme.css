@@ -1529,5 +1529,19 @@ img {
     background: #fff; }
   .main-content .owl-carousel .owl-dots .owl-dot.active span {
     background: #ffc302; }
+.main-content .brands-slider-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .main-content .brands-slider-wrapper .brand-item {
+    line-height: 78px;
+    text-align: center; }
+  .main-content .brands-slider-wrapper .owl-carousel .owl-item img {
+    display: inline;
+    width: auto; }
+
+@media (min-width: 1200px) {
+  .brands-slider-wrapper {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important; } }
 
 /*# sourceMappingURL=theme.css.map */
