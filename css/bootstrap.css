@@ -594,7 +594,7 @@ pre {
 .offset-11 {
   margin-left: 91.6666666667%; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .col-xm {
     flex-basis: 0;
     flex-grow: 1;
@@ -1509,7 +1509,7 @@ pre {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.075); }
 
-@media (max-width: 419.98px) {
+@media (max-width: 399.98px) {
   .table-responsive-xm {
     display: block;
     width: 100%;
@@ -2415,7 +2415,7 @@ input[type="button"].btn-block {
   right: 0;
   left: auto; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .dropdown-menu-xm-left {
     right: auto;
     left: 0; }
@@ -3239,12 +3239,12 @@ input[type="button"].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%; }
 
-@media (max-width: 419.98px) {
+@media (max-width: 399.98px) {
   .navbar-expand-xm > .container,
   .navbar-expand-xm > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .navbar-expand-xm {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -4030,7 +4030,7 @@ input[type="button"].btn-block {
       border-bottom-right-radius: 2.25rem;
       border-bottom-left-radius: 0; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .list-group-horizontal-xm {
     flex-direction: row; }
     .list-group-horizontal-xm .list-group-item {
@@ -5034,7 +5034,7 @@ button.bg-dark:focus {
 .d-inline-flex {
   display: inline-flex !important; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .d-xm-none {
     display: none !important; }
 
@@ -5332,7 +5332,7 @@ button.bg-dark:focus {
 .align-self-stretch {
   align-self: stretch !important; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .flex-xm-row {
     flex-direction: row !important; }
 
@@ -5851,7 +5851,7 @@ button.bg-dark:focus {
 .float-none {
   float: none !important; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .float-xm-left {
     float: left !important; }
 
@@ -6614,7 +6614,7 @@ button.bg-dark:focus {
 .mx-auto {
   margin-left: auto !important; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .m-xm-0 {
     margin: 0 !important; }
 
@@ -9490,7 +9490,7 @@ button.bg-dark:focus {
 .text-center {
   text-align: center !important; }
 
-@media (min-width: 420px) {
+@media (min-width: 400px) {
   .text-xm-left {
     text-align: left !important; }
 

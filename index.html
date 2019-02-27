@@ -51,18 +51,18 @@
           <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="Magicna oaza logo" />
           </a>
-          <div class="nav-action d-flex align-items-center ml-auto order-md-last">
-            <a href="#" class="btn btn-primary btn-sm d-inline-block">
+          <div class="nav-action d-flex align-items-center ml-xm-auto mr-2 mr-xm-4 mr-sm-2 order-md-last">
+            <a href="#" class="btn btn-primary btn-sm d-none d-sm-inline-block d-md-none d-lg-inline-block mr-sm-3 mr-lg-0">
               <span>Klub </span>
-              <span class="d-none d-sm-inline d-md-none d-xl-inline">Magzijevih </span>
-              <span class="d-none d-sm-inline d-md-none d-xl-inline">Drugara</span>
+              <span class="d-none d-sm-none d-xl-inline">Magzijevih </span>
+              <span class="d-none d-sm-none d-xl-inline">Drugara</span>
             </a>
             <!-- Search form start -->
             <div class="search-wrapper mx-2 mx-lg-3">
               <a href="#" class="search-icon">
                 <img src="img/nav-action-img/img-01.png" alt="Search-icon" />
               </a>
-              <form action="post" class="search-form py-3">
+              <form action="post" class="search-form">
                 <div class="form-group">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Pojam za pretragu..." />
@@ -80,7 +80,7 @@
               <img src="img/nav-action-img/img-02.png" alt="Favorites icon" />
             </a>
             <!-- Small cart start -->
-            <div class="small-cart-wrapper mr-3 mr-xm-4 mr-lg-3">
+            <div class="small-cart-wrapper mr-2 mr-lg-3">
               <a href="#" class="small-cart-icon">
                 <img src="img/nav-action-img/img-03.png" alt="cart icon" />
                 <span class="small-cart-products-number">2</span>
@@ -102,8 +102,7 @@
                       </a>
                     </figure>
                     <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-collection"><a href="#">Mali Genije</a></h5>
-                      <h5 class="small-cart-product-type mb-3"><a href="#">Edukativni Set</a></h5>
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
                       <p class="small-cart-product-price">1,279.00 RSD</p>
                       <span class="fa fa-close delete-product"></span>
                     </div>
@@ -115,8 +114,7 @@
                       </a>
                     </figure>
                     <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-collection"><a href="#">Mali Genije</a></h5>
-                      <h5 class="small-cart-product-type mb-3"><a href="#">Edukativni Set</a></h5>
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
                       <p class="small-cart-product-price">1,279.00 RSD</p>
                       <span class="fa fa-close delete-product"></span>
                     </div>
@@ -128,8 +126,7 @@
                       </a>
                     </figure>
                     <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-collection"><a href="#">Mali Genije</a></h5>
-                      <h5 class="small-cart-product-type mb-3"><a href="#">Edukativni Set</a></h5>
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
                       <p class="small-cart-product-price">1,279.00 RSD</p>
                       <span class="fa fa-close delete-product"></span>
                     </div>
@@ -141,8 +138,7 @@
                       </a>
                     </figure>
                     <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-collection"><a href="#">Mali Genije</a></h5>
-                      <h5 class="small-cart-product-type mb-3"><a href="#">Edukativni Set</a></h5>
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
                       <p class="small-cart-product-price">1,279.00 RSD</p>
                       <span class="fa fa-close delete-product"></span>
                     </div>
@@ -154,8 +150,7 @@
                       </a>
                     </figure>
                     <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-collection"><a href="#">Mali Genije</a></h5>
-                      <h5 class="small-cart-product-type mb-3"><a href="#">Edukativni Set</a></h5>
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
                       <p class="small-cart-product-price">1,279.00 RSD</p>
                       <span class="fa fa-close delete-product"></span>
                     </div>
@@ -180,7 +175,28 @@
                   <a href="#" class="btn btn-tertiary small-cart-action-btn-order">Naruči</a>
                 </div>
               </div>
-              <!-- Small cart end -->
+            </div>
+            <!-- Small cart end -->
+            <div class="dropdown">
+              <a class="user-action-icon dropdown-toggle" href="#" id="user-action" data-toggle="dropdown">
+                <img src="img/nav-action-img/img-04.png" alt="User icon" />
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="user-action">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-sign-in fa-2x text-tertiary mr-3"></span>
+                  <span>Login</span>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-user-circle fa-2x text-tertiary mr-3"></span> 
+                  <span>Register</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-question-circle fa-2x text-tertiary mr-3"></span> 
+                  <span>Forgotten password</span>
+                </a>
+              </div>
             </div>
           </div>
 

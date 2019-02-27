@@ -39,9 +39,12 @@ $border-color: $gray-400;
     }
     .small-cart-product-detail {
       position: relative;
+      padding-right: 25px;
 
-      .small-cart-product-collection,
-      .small-cart-product-type {
+      .small-cart-product-title {
+        line-height: 1.2;
+        max-height: 3rem;
+        overflow: hidden;
         a {
           color: $text-main-color;
           cursor: pointer;
@@ -101,8 +104,8 @@ $border-color: $gray-400;
     .small-cart-products {
       height: 45vh;
       .delete-product {
-        right: 30px;
-        top: -8px;
+        right: 12px;
+        top: 1px;
       }
     }
     .small-cart-product-img {

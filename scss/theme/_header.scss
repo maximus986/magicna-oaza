@@ -1,5 +1,6 @@
 $bg-color-primary: $primary;
 $bg-color-tertiary: $tertiary;
+$bg-white: $white;
 $text-color-primary: $primary;
 $text-color-secondary: $secondary;
 $text-color-tertiary: $tertiary;
@@ -8,7 +9,8 @@ $text-main-color: $gray-700;
 
 .main-header {
   .navbar-brand {
-    max-width: 31%;
+    max-width: 35%;
+    margin-right: 0.5rem;
   }
 
   #main-menu {
@@ -85,13 +87,23 @@ $text-main-color: $gray-700;
   .nav-action {
     .search-icon,
     .favorites-icon,
-    .small-cart-icon {
+    .small-cart-icon,
+    .user-action-icon {
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       text-align: center;
       cursor: pointer;
       line-height: 1;
+      padding-top: 2px;
+    }
+
+    .search-icon,
+    .favorites-icon {
+      padding-top: 3px;
+    }
+    .small-cart-icon {
+      padding-top: 5px;
     }
 
     .search-form {
@@ -105,6 +117,7 @@ $text-main-color: $gray-700;
 
       .form-group {
         margin: 0;
+        padding: 1rem;
       }
 
       .form-control {
@@ -146,7 +159,7 @@ $text-main-color: $gray-700;
         height: 1rem;
         border-radius: 50%;
         position: absolute;
-        top: -8px;
+        top: -1px;
         right: -7px;
         font-size: 0.625rem;
         color: $text-white;
@@ -155,6 +168,32 @@ $text-main-color: $gray-700;
         text-align: center;
         background: $bg-color-primary;
       }
+    }
+
+    .dropdown-menu {
+      top: 160%;
+      right: 0;
+      left: auto;
+      background-color: $bg-white;
+      background-clip: padding-box;
+      border: 1px solid $text-color-tertiary;
+      border-radius: 1rem;
+
+      .dropdown-item {
+        color: $text-main-color;
+        transition: 0.3s linear;
+        &:hover,
+        &:focus {
+          color: $text-color-primary;
+          background-color: transparent;
+        }
+      }
+      .dropdown-divider {
+        border-top: 2px solid $text-color-tertiary;
+      }
+    }
+    .dropdown-toggle::after {
+      display: none;
     }
   }
   .overlay-body {
@@ -214,6 +253,7 @@ $text-main-color: $gray-700;
     }
     .nav-item {
       padding: 0 9px !important;
+      cursor: pointer;
     }
     .nav-link {
       padding: 0 !important;
@@ -242,10 +282,12 @@ $text-main-color: $gray-700;
         &-desktop-level-1 {
           display: inline-block;
           font-size: inherit;
+          transition: 0.3s linear;
         }
         &-desktop-level-2 {
           display: inline-block;
           padding-left: 20px;
+          transition: 0.3s linear;
         }
       }
     }
@@ -308,16 +350,9 @@ $text-main-color: $gray-700;
     }
 
     .nav-action {
-      .search-icon,
-      .favorites-icon,
-      .small-cart-icon {
-        width: 20px;
-        height: 20px;
-      }
-
       .search-form {
-        width: calc(80% - 73.3px - 34.2px);
-        left: 21%;
+        width: calc(78% - 73.3px - 34.2px);
+        left: 19%;
         top: 9%;
         background: none;
       }
@@ -327,10 +362,10 @@ $text-main-color: $gray-700;
     }
 
     .nav-item:hover .nav-link > .submenu-toggler-desktop-level-1 {
-      transform: rotate(180deg);
+      transform: rotateX(180deg) translateY(-2px);
     }
     .submenu-level-1 > .nav-item:hover .nav-link > .submenu-toggler-desktop-level-2 {
-      transform: rotate(180deg);
+      transform: rotate(180deg) translateX(-20px);
     }
   }
 }
@@ -343,7 +378,7 @@ $text-main-color: $gray-700;
 
     .nav-action {
       .search-form {
-        width: calc(78% - 73.3px - 34.2px);
+        width: calc(75% - 73.3px - 34.2px);
       }
     }
     .submenu {
@@ -368,6 +403,12 @@ $text-main-color: $gray-700;
     }
     .nav-item {
       padding: 0 12px !important;
+    }
+
+    .nav-action {
+      .search-form {
+        width: calc(77% - 73.3px - 34.2px);
+      }
     }
     .submenu {
       left: 20.5%;
