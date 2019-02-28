@@ -14,6 +14,7 @@ $(document).ready(function() {
   const owlCarousel = $('.owl-carousel');
   const leadSlider = $('.lead-slider');
   const brandSlider = $('.brands-slider');
+  const topSellersSlider = $('.top-sellers-slider');
   const header = $('.main-header');
   const mainContent = $('.main-content');
 
@@ -54,10 +55,11 @@ $(document).ready(function() {
   });
 
   // Show header search from
-  searchIcon.click(function() {
+  searchIcon.click(function(e) {
     $(this)
       .next('.search-form')
       .fadeToggle();
+    e.preventDefault();
   });
 
   //Show small cart
@@ -129,6 +131,39 @@ $(document).ready(function() {
         1200: {
           items: 10,
           margin: 50
+        }
+      }
+    });
+    topSellersSlider.owlCarousel({
+      loop: true,
+      dots: false,
+      autoplay: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        400: {
+          items: 1
+        },
+        576: {
+          items: 2,
+          slideBy: 2,
+          margin: 10
+        },
+        800: {
+          items: 3,
+          slideBy: 3,
+          margin: 10
+        },
+        992: {
+          items: 3,
+          slideBy: 3
+        },
+        1200: {
+          items: 4,
+          margin: 42,
+          slideBy: 4
         }
       }
     });

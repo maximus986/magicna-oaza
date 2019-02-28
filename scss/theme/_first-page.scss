@@ -42,6 +42,16 @@ $bg-color-tertiary: $tertiary;
       }
     }
   }
+  .section-title {
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .product-item {
+    width: 246px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {

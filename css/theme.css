@@ -291,6 +291,55 @@ img {
   padding: 0.9rem 3rem;
   font-size: 1.25rem; }
 
+.product-item-img {
+  height: 240px;
+  padding: 0 10px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 11px;
+  position: relative; }
+  .product-item-img img {
+    max-width: 100%;
+    max-height: 100%; }
+.product-item .product-title a {
+  color: inherit;
+  transition: 0.3s linear; }
+  .product-item .product-title a:hover {
+    color: rgba(73, 73, 73, 0.44); }
+.product-item .product-price {
+  font-family: "GothamRounded-Bold"; }
+  .product-item .product-price .old-price {
+    font-size: 0.8rem;
+    color: #9b9b9b; }
+  .product-item .product-price .current-price {
+    font-size: 1.3rem; }
+
+.sticker-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.sticker {
+  color: #fff;
+  font-family: "GothamRounded-Bold";
+  text-align: center; }
+  .sticker-discount {
+    background: #ffc302;
+    font-size: 1.5rem;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%; }
+  .sticker-new-arrivals {
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.125rem;
+    background: #ff151f;
+    text-transform: uppercase; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1538,6 +1587,13 @@ img {
   .main-content .brands-slider-wrapper .owl-carousel .owl-item img {
     display: inline;
     width: auto; }
+.main-content .section-title {
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center; }
+.main-content .product-item {
+  width: 246px;
+  margin: 0 auto; }
 
 @media (min-width: 1200px) {
   .brands-slider-wrapper {

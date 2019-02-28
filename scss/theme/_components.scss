@@ -1,5 +1,76 @@
+$bg-gray-light-100: $gray-100;
+$text-main-color: $gray-700;
+$text-color-gray-200: $gray-200;
+$text-white: $white;
+$bg-color-tertiary: $tertiary;
+$bg-color-primary: $primary;
+
 //Buttons
 .theme-btn {
   padding: 0.9rem 3rem;
   font-size: 1.25rem;
+}
+
+//Product-item
+
+.product-item {
+  &-img {
+    height: 240px;
+    padding: 0 10px;
+    background: $bg-gray-light-100;
+    border-radius: 12px;
+    margin-bottom: 11px;
+    position: relative;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .product-title a {
+    color: inherit;
+    transition: 0.3s linear;
+    &:hover {
+      color: rgba($text-main-color, 0.44);
+    }
+  }
+  .product-price {
+    font-family: $gotham-rounded-bold;
+    .old-price {
+      font-size: 0.8rem;
+      color: $text-color-gray-200;
+    }
+    .current-price {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.sticker-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.sticker {
+  color: $text-white;
+  font-family: $gotham-rounded-bold;
+  text-align: center;
+
+  &-discount {
+    background: $bg-color-tertiary;
+    font-size: 1.5rem;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+  }
+  &-new-arrivals {
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.125rem;
+    background: $bg-color-primary;
+    text-transform: uppercase;
+  }
 }
