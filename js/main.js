@@ -153,11 +153,6 @@ $(document).ready(function() {
           slideBy: 2,
           margin: 10
         },
-        800: {
-          items: 3,
-          slideBy: 3,
-          margin: 10
-        },
         992: {
           items: 3,
           slideBy: 3
@@ -186,10 +181,6 @@ $(document).ready(function() {
         },
         576: {
           items: 2,
-          margin: 10
-        },
-        800: {
-          items: 3,
           margin: 10
         },
         992: {

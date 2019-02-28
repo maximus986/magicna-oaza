@@ -26,11 +26,16 @@ $bg-color-primary: $primary;
       max-height: 100%;
     }
   }
-  .product-title a {
-    color: inherit;
-    transition: 0.3s linear;
-    &:hover {
-      color: rgba($text-main-color, 0.44);
+  .product-title {
+    line-height: 1.2;
+    max-height: 3rem;
+    overflow: hidden;
+    a {
+      color: inherit;
+      transition: 0.3s linear;
+      &:hover {
+        color: rgba($text-main-color, 0.44);
+      }
     }
   }
   .product-price {

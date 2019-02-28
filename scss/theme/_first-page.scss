@@ -1,6 +1,8 @@
 $bg-color-white: $white;
 $bg-color-tertiary: $tertiary;
 $text-color-gray-200: $gray-200;
+$text-color-primary: $primary;
+$text-main-color: $gray-700;
 
 .main-content {
   .hero {
@@ -50,13 +52,25 @@ $text-color-gray-200: $gray-200;
   }
 
   .product-item {
-    width: 246px;
+    width: 246px; // for proper styling on small screen devices
     margin: 0 auto;
+  }
+
+  .look-all {
+    font-family: $gotham-rounded-bold;
+    font-size: 1.25rem;
+    color: $text-main-color;
+    &-link {
+      color: inherit;
+      transition: 0.2s linear;
+      &:hover {
+        color: $text-color-primary;
+      }
+    }
   }
 
   .newest-products-slider {
     position: relative;
-
     .owl-nav {
       position: absolute;
       top: 25%;
@@ -74,18 +88,77 @@ $text-color-gray-200: $gray-200;
         font-size: 25px;
       }
       .owl-prev {
-        left: -50px;
+        left: 0px;
       }
       .owl-next {
-        right: -50px;
+        right: 0px;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .main-content {
+    .newest-products-slider {
+      .owl-nav {
+        .owl-prev {
+          left: -10px;
+        }
+        .owl-next {
+          right: -10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    .newest-products-slider {
+      .owl-nav {
+        .owl-prev {
+          left: 20px;
+        }
+        .owl-next {
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    .newest-products-slider {
+      .owl-nav {
+        .owl-prev {
+          left: -5px;
+        }
+        .owl-next {
+          right: -5px;
+        }
       }
     }
   }
 }
 
 @media (min-width: 1200px) {
-  .brands-slider-wrapper {
-    padding-top: 3.75rem !important;
-    padding-bottom: 3.75rem !important;
+  .main-content {
+    .brands-slider-wrapper {
+      padding-top: 3.75rem !important;
+      padding-bottom: 3.75rem !important;
+    }
+    .look-all {
+      margin-bottom: 4.15rem !important;
+    }
+    .newest-products-slider {
+      .owl-nav {
+        .owl-prev {
+          left: -25px;
+        }
+        .owl-next {
+          right: -25px;
+        }
+      }
+    }
   }
 }

@@ -301,11 +301,15 @@ img {
   .product-item-img img {
     max-width: 100%;
     max-height: 100%; }
-.product-item .product-title a {
-  color: inherit;
-  transition: 0.3s linear; }
-  .product-item .product-title a:hover {
-    color: rgba(73, 73, 73, 0.44); }
+.product-item .product-title {
+  line-height: 1.2;
+  max-height: 3rem;
+  overflow: hidden; }
+  .product-item .product-title a {
+    color: inherit;
+    transition: 0.3s linear; }
+    .product-item .product-title a:hover {
+      color: rgba(73, 73, 73, 0.44); }
 .product-item .product-price {
   font-family: "GothamRounded-Bold"; }
   .product-item .product-price .old-price {
@@ -1594,6 +1598,15 @@ img {
 .main-content .product-item {
   width: 246px;
   margin: 0 auto; }
+.main-content .look-all {
+  font-family: "GothamRounded-Bold";
+  font-size: 1.25rem;
+  color: #494949; }
+  .main-content .look-all-link {
+    color: inherit;
+    transition: 0.2s linear; }
+    .main-content .look-all-link:hover {
+      color: #ff151f; }
 .main-content .newest-products-slider {
   position: relative; }
   .main-content .newest-products-slider .owl-nav {
@@ -1610,13 +1623,34 @@ img {
       color: #9b9b9b;
       font-size: 25px; }
     .main-content .newest-products-slider .owl-nav .owl-prev {
-      left: -50px; }
+      left: 0px; }
     .main-content .newest-products-slider .owl-nav .owl-next {
-      right: -50px; }
+      right: 0px; }
 
+@media (min-width: 576px) {
+  .main-content .newest-products-slider .owl-nav .owl-prev {
+    left: -10px; }
+  .main-content .newest-products-slider .owl-nav .owl-next {
+    right: -10px; } }
+@media (min-width: 768px) {
+  .main-content .newest-products-slider .owl-nav .owl-prev {
+    left: 20px; }
+  .main-content .newest-products-slider .owl-nav .owl-next {
+    right: 20px; } }
+@media (min-width: 992px) {
+  .main-content .newest-products-slider .owl-nav .owl-prev {
+    left: -5px; }
+  .main-content .newest-products-slider .owl-nav .owl-next {
+    right: -5px; } }
 @media (min-width: 1200px) {
-  .brands-slider-wrapper {
+  .main-content .brands-slider-wrapper {
     padding-top: 3.75rem !important;
-    padding-bottom: 3.75rem !important; } }
+    padding-bottom: 3.75rem !important; }
+  .main-content .look-all {
+    margin-bottom: 4.15rem !important; }
+  .main-content .newest-products-slider .owl-nav .owl-prev {
+    left: -25px; }
+  .main-content .newest-products-slider .owl-nav .owl-next {
+    right: -25px; } }
 
 /*# sourceMappingURL=theme.css.map */
