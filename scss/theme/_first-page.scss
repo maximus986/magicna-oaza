@@ -1,5 +1,6 @@
 $bg-color-white: $white;
 $bg-color-tertiary: $tertiary;
+$text-color-gray-200: $gray-200;
 
 .main-content {
   .hero {
@@ -51,6 +52,34 @@ $bg-color-tertiary: $tertiary;
   .product-item {
     width: 246px;
     margin: 0 auto;
+  }
+
+  .newest-products-slider {
+    position: relative;
+
+    .owl-nav {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 100%;
+      [class*='owl-']:hover {
+        background: none;
+      }
+
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        top: 0;
+        color: $text-color-gray-200;
+        font-size: 25px;
+      }
+      .owl-prev {
+        left: -50px;
+      }
+      .owl-next {
+        right: -50px;
+      }
+    }
   }
 }
 

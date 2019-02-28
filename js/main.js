@@ -13,8 +13,9 @@ $(document).ready(function() {
   const smallCartProducts = $('.small-cart-products');
   const owlCarousel = $('.owl-carousel');
   const leadSlider = $('.lead-slider');
-  const brandSlider = $('.brands-slider');
+  const brandsSlider = $('.brands-slider');
   const topSellersSlider = $('.top-sellers-slider');
+  const newestProductsSlider = $('.newest-products-slider');
   const header = $('.main-header');
   const mainContent = $('.main-content');
 
@@ -106,7 +107,7 @@ $(document).ready(function() {
       loop: true,
       autoplay: true
     });
-    brandSlider.owlCarousel({
+    brandsSlider.owlCarousel({
       loop: true,
       dots: false,
       autoplay: true,
@@ -138,6 +139,7 @@ $(document).ready(function() {
       loop: true,
       dots: false,
       autoplay: true,
+      autoplayHoverPause: true,
       dots: false,
       responsive: {
         0: {
@@ -164,6 +166,38 @@ $(document).ready(function() {
           items: 4,
           margin: 42,
           slideBy: 4
+        }
+      }
+    });
+    newestProductsSlider.owlCarousel({
+      loop: true,
+      dots: false,
+      autoplay: true,
+      dots: false,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        400: {
+          items: 1
+        },
+        576: {
+          items: 2,
+          margin: 10
+        },
+        800: {
+          items: 3,
+          margin: 10
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 4,
+          margin: 42
         }
       }
     });
