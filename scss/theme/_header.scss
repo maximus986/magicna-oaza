@@ -369,7 +369,7 @@ $text-main-color: $gray-700;
       transform: rotateX(180deg) translateY(-2px);
     }
     .submenu-level-1 > .nav-item:hover .nav-link > .submenu-toggler-desktop-level-2 {
-      transform: rotate(180deg) translateX(-20px);
+      transform: rotateY(180deg) translateX(-20px);
     }
   }
 }
