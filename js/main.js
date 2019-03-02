@@ -16,6 +16,7 @@ $(document).ready(function() {
   const brandsSlider = $('.brands-slider');
   const topSellersSlider = $('.top-sellers-slider');
   const newestProductsSlider = $('.newest-products-slider');
+  const allAgesProductsSlider = $('.all-ages-products-slider');
   const header = $('.main-header');
   const mainContent = $('.main-content');
 
@@ -137,7 +138,6 @@ $(document).ready(function() {
     });
     topSellersSlider.owlCarousel({
       loop: true,
-      dots: false,
       autoplay: true,
       autoplayHoverPause: true,
       dots: false,
@@ -166,7 +166,6 @@ $(document).ready(function() {
     });
     newestProductsSlider.owlCarousel({
       loop: true,
-      dots: false,
       autoplay: true,
       dots: false,
       autoplayHoverPause: true,
@@ -189,6 +188,39 @@ $(document).ready(function() {
         1200: {
           items: 4,
           margin: 42
+        }
+      }
+    });
+    allAgesProductsSlider.owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 10,
+          stagePadding: 30
+        },
+        576: {
+          items: 1,
+          margin: 20,
+          stagePadding: 80
+        },
+        768: {
+          items: 2,
+          margin: 20,
+          stagePadding: 40
+        },
+        992: {
+          items: 2,
+          margin: 20,
+          stagePadding: 80
+        },
+        1200: {
+          items: 2,
+          margin: 30,
+          stagePadding: 100
         }
       }
     });

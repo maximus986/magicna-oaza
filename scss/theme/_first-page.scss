@@ -1,8 +1,11 @@
 $bg-color-white: $white;
+$bg-color-secondary: $secondary;
 $bg-color-tertiary: $tertiary;
 $text-color-gray-200: $gray-200;
+$text-color-gray-100: $gray-100;
 $text-color-primary: $primary;
 $text-main-color: $gray-700;
+$text-white: $white;
 
 .main-content {
   .hero {
@@ -12,8 +15,7 @@ $text-main-color: $gray-700;
     background-repeat: no-repeat;
     height: 100vh;
   }
-
-  .owl-carousel {
+  .lead-slider {
     .owl-dots {
       position: absolute;
       left: 0;
@@ -22,6 +24,9 @@ $text-main-color: $gray-700;
 
       .owl-dot span {
         background: $bg-color-white;
+        width: 14px;
+        height: 14px;
+        margin: 5px 14px;
       }
       .owl-dot.active span {
         background: $bg-color-tertiary;
@@ -90,6 +95,67 @@ $text-main-color: $gray-700;
       }
     }
   }
+  .all-ages-products-slider {
+    .all-ages-products-link {
+      display: block;
+      .all-ages-products-img-wrapper {
+        position: relative;
+        .all-ages-products-img {
+          display: inline-block;
+          border-radius: 12px;
+        }
+      }
+      .all-ages-products-title-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($bg-color-white, 0.48);
+        color: $text-white;
+        font-family: $gotham-rounded-bold;
+        .all-ages-products-title {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          padding: 30px 30px;
+          background-position: left bottom;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .owl-stage-outer {
+      .owl-stage {
+        padding-left: 0 !important;
+      }
+    }
+
+    .owl-dots {
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: -30px;
+      width: 100%;
+      text-align: left;
+      margin-top: 0;
+
+      .owl-dot {
+        span {
+          background: $bg-gray-light-100;
+          width: 14px;
+          height: 14px;
+          margin: 5px 14px;
+          border-radius: 50%;
+        }
+        &:first-of-type span {
+          margin-left: 0;
+        }
+      }
+      .owl-dot.active span {
+        background: $bg-color-secondary;
+      }
+    }
+  }
 }
 @media (min-width: 576px) {
   .main-content {
@@ -103,6 +169,11 @@ $text-main-color: $gray-700;
         }
       }
     }
+    // .all-ages-products-slider {
+    //   .owl-dots {
+    //     left: -11%;
+    //   }
+    // }
   }
 }
 
