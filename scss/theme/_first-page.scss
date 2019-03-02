@@ -69,7 +69,8 @@ $text-white: $white;
     }
   }
 
-  .newest-products-slider {
+  .newest-products-slider,
+  .recommendations-slider {
     position: relative;
     .owl-nav {
       position: absolute;
@@ -88,10 +89,10 @@ $text-white: $white;
         font-size: 25px;
       }
       .owl-prev {
-        left: 0px;
+        left: -17px;
       }
       .owl-next {
-        right: 0px;
+        right: -17px;
       }
     }
   }
@@ -134,7 +135,7 @@ $text-white: $white;
       position: absolute;
       display: block;
       left: 0;
-      bottom: -30px;
+      bottom: -40px;
       width: 100%;
       text-align: left;
       margin-top: 0;
@@ -158,34 +159,18 @@ $text-white: $white;
   }
 }
 @media (min-width: 576px) {
-  .main-content {
-    .newest-products-slider {
-      .owl-nav {
-        .owl-prev {
-          left: -10px;
-        }
-        .owl-next {
-          right: -10px;
-        }
-      }
-    }
-    // .all-ages-products-slider {
-    //   .owl-dots {
-    //     left: -11%;
-    //   }
-    // }
-  }
 }
 
 @media (min-width: 768px) {
   .main-content {
-    .newest-products-slider {
+    .newest-products-slider,
+    .recommendations-slider {
       .owl-nav {
         .owl-prev {
-          left: 20px;
+          left: -13px;
         }
         .owl-next {
-          right: 20px;
+          right: -13px;
         }
       }
     }
@@ -194,13 +179,14 @@ $text-white: $white;
 
 @media (min-width: 992px) {
   .main-content {
-    .newest-products-slider {
+    .newest-products-slider,
+    .recommendations-slider {
       .owl-nav {
         .owl-prev {
-          left: -5px;
+          left: -25px;
         }
         .owl-next {
-          right: -5px;
+          right: -25px;
         }
       }
     }
@@ -216,13 +202,14 @@ $text-white: $white;
     .look-all {
       margin-bottom: 4.15rem !important;
     }
-    .newest-products-slider {
+    .newest-products-slider,
+    .recommendations-slider {
       .owl-nav {
         .owl-prev {
-          left: -25px;
+          left: -40px;
         }
         .owl-next {
-          right: -25px;
+          right: -40px;
         }
       }
     }

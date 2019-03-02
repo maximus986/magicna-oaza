@@ -17,6 +17,7 @@ $(document).ready(function() {
   const topSellersSlider = $('.top-sellers-slider');
   const newestProductsSlider = $('.newest-products-slider');
   const allAgesProductsSlider = $('.all-ages-products-slider');
+  const recommendationsSlider = $('.recommendations-slider');
   const header = $('.main-header');
   const mainContent = $('.main-content');
 
@@ -103,11 +104,13 @@ $(document).ready(function() {
 
   //Sliders
   if (owlCarousel.length > 0) {
+    //Lead slider
     leadSlider.owlCarousel({
       items: 1,
       loop: true,
       autoplay: true
     });
+    //Brands slider
     brandsSlider.owlCarousel({
       loop: true,
       dots: false,
@@ -136,6 +139,7 @@ $(document).ready(function() {
         }
       }
     });
+    //Top sellers slider
     topSellersSlider.owlCarousel({
       loop: true,
       autoplay: true,
@@ -164,6 +168,7 @@ $(document).ready(function() {
         }
       }
     });
+    //Newest products slider
     newestProductsSlider.owlCarousel({
       loop: true,
       autoplay: true,
@@ -191,6 +196,7 @@ $(document).ready(function() {
         }
       }
     });
+    //All ages products slider
     allAgesProductsSlider.owlCarousel({
       loop: true,
       autoplay: true,
@@ -221,6 +227,34 @@ $(document).ready(function() {
           items: 2,
           margin: 30,
           stagePadding: 100
+        }
+      }
+    });
+    //Recommendations slider
+    recommendationsSlider.owlCarousel({
+      loop: true,
+      autoplay: true,
+      dots: false,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        400: {
+          items: 1
+        },
+        576: {
+          items: 2,
+          margin: 10
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 4,
+          margin: 42
         }
       }
     });

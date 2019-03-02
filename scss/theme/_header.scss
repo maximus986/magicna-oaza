@@ -428,3 +428,15 @@ $text-main-color: $gray-700;
     }
   }
 }
+
+@media (min-width: 1400px) {
+  .main-header {
+    .nav-action {
+      .search-form {
+        width: calc(85% - 73.3px - 34.2px);
+        left: 12%;
+        top: 11%;
+      }
+    }
+  }
+}

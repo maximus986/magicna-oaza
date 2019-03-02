@@ -149,3 +149,11 @@ $border-color: $gray-400;
     }
   }
 }
+
+@media (min-width: 1400px) {
+  .small-cart-content {
+    .small-cart-products {
+      height: 60vh;
+    }
+  }
+}
