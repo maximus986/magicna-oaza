@@ -1,8 +1,10 @@
 $bg-color-white: $white;
 $bg-color-secondary: $secondary;
 $bg-color-tertiary: $tertiary;
-$text-color-gray-200: $gray-200;
+$bg-gray-light-100: $gray-100;
 $text-color-gray-100: $gray-100;
+$text-color-gray-200: $gray-200;
+$text-color-gray-400: $gray-400;
 $text-color-primary: $primary;
 $text-main-color: $gray-700;
 $text-white: $white;
@@ -154,6 +156,43 @@ $text-white: $white;
       }
       .owl-dot.active span {
         background: $bg-color-secondary;
+      }
+    }
+  }
+  .ask-magzy {
+    background-color: $bg-color-white;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .ask-magzy-form {
+      .select-gender {
+        font-family: $gotham-rounded-bold;
+      }
+      .select2-container--default {
+        .select2-selection--single {
+          background-color: $bg-gray-light-100;
+          border: 1px solid $text-color-gray-400;
+          border-radius: 2.25rem;
+          height: calc(2em + 1.8rem + 2px);
+          padding: 0.9rem 1.5rem;
+          font-size: 1.125rem;
+
+          .select2-selection__rendered {
+            color: $text-main-color;
+            line-height: 1.5;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          .select2-selection__arrow {
+            position: absolute;
+            right: 5px;
+            bottom: 50%;
+            transform: translateY(50%);
+            font-size: 1.5rem;
+            color: $text-main-color;
+          }
+        }
       }
     }
   }

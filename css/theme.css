@@ -289,7 +289,8 @@ img {
 
 .theme-btn {
   padding: 0.9rem 3rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  color: #fff; }
 
 .product-item-img {
   height: 240px;
@@ -311,7 +312,7 @@ img {
     .product-item .product-title a:hover {
       color: rgba(73, 73, 73, 0.44); }
 .product-item .product-price {
-  font-family: "GothamRounded-Bold"; }
+  font-family: "GothamRounded-Book"; }
   .product-item .product-price .old-price {
     font-size: 0.8rem;
     color: #9b9b9b; }
@@ -343,6 +344,16 @@ img {
     font-size: 1.125rem;
     background: #ff151f;
     text-transform: uppercase; }
+
+.form-control {
+  height: calc(2em + 1.8rem + 2px);
+  padding: 0.9rem 1.2rem;
+  font-size: 1.125rem;
+  background-color: #f9f9f9; }
+  .form-control:focus {
+    color: #494949;
+    background-color: #f9f9f9;
+    border-color: #cfcfcf; }
 
 /*!
  * Hamburgers
@@ -1684,6 +1695,32 @@ img {
     margin-left: 0; }
   .main-content .all-ages-products-slider .owl-dots .owl-dot.active span {
     background: #8759f2; }
+.main-content .ask-magzy {
+  background-color: #fff;
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .main-content .ask-magzy .ask-magzy-form .select-gender {
+    font-family: "GothamRounded-Bold"; }
+  .main-content .ask-magzy .ask-magzy-form .select2-container--default .select2-selection--single {
+    background-color: #f9f9f9;
+    border: 1px solid #cfcfcf;
+    border-radius: 2.25rem;
+    height: calc(2em + 1.8rem + 2px);
+    padding: 0.9rem 1.5rem;
+    font-size: 1.125rem; }
+    .main-content .ask-magzy .ask-magzy-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+      color: #494949;
+      line-height: 1.5;
+      padding-left: 0;
+      padding-right: 0; }
+    .main-content .ask-magzy .ask-magzy-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+      position: absolute;
+      right: 5px;
+      bottom: 50%;
+      transform: translateY(50%);
+      font-size: 1.5rem;
+      color: #494949; }
 
 @media (min-width: 768px) {
   .main-content .newest-products-slider .owl-nav .owl-prev,

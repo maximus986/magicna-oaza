@@ -1,5 +1,6 @@
 $(document).ready(function() {
   //Target DOM elements
+  const header = $('.main-header');
   const hamburger = $('.hamburger');
   const submenuTogglerL1 = $('.submenu-toggler-level-1');
   const submenuTogglerL2 = $('.submenu-toggler-level-2');
@@ -18,7 +19,9 @@ $(document).ready(function() {
   const newestProductsSlider = $('.newest-products-slider');
   const allAgesProductsSlider = $('.all-ages-products-slider');
   const recommendationsSlider = $('.recommendations-slider');
-  const header = $('.main-header');
+  const selectGender = $('.select-gender');
+  const selectCategory = $('.select-category');
+
   const mainContent = $('.main-content');
 
   //Set main-content margin-top depending on header's height
@@ -259,6 +262,20 @@ $(document).ready(function() {
       }
     });
   }
+
+  //Select elements
+  selectGender.select2({
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+  selectCategory.select2({
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+
+  // Replace built-in arrow with fa icon
+  $('b[role="presentation"]').hide();
+  $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
   // // EASE SCROLL
 
