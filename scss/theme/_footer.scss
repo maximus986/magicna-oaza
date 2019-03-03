@@ -1,2 +1,73 @@
+$bg-color-beige: $beige;
+$bg-color-primary: $primary;
+$bg-color-white: $white;
+$text-main-color: $gray-700;
+$text-white: $white;
+$text-color-primary: $primary;
 
+.main-footer {
+  background: $bg-color-beige;
 
+  &-content {
+    color: $text-main-color;
+    font-family: $gotham-rounded-bold;
+    .footer-nav-item,
+    .footer-info-item {
+      margin-bottom: 1rem;
+    }
+    .footer-nav-link,
+    .footer-info-link {
+      color: inherit;
+      transition: 0.3s linear;
+      &:hover {
+        color: rgba($text-main-color, 0.44) !important;
+      }
+    }
+    .social {
+      margin-bottom: 20px;
+      .social-links {
+        .fa {
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          text-align: center;
+          border-radius: 50%;
+          background: $bg-color-primary;
+          font-size: 1.3rem;
+          margin-right: 1rem;
+          color: $text-white;
+          transition: 0.3s linear;
+          &:hover {
+            color: $text-color-primary;
+            background: $bg-color-white;
+          }
+        }
+      }
+    }
+    .newsletter {
+      .newsletter-form {
+        .form-control {
+          height: calc(2em + 1.3rem + 1px);
+          padding: 0.9rem 1.5rem;
+          background-color: transparent;
+          border-color: $text-main-color;
+          font-size: 1rem;
+        }
+        .theme-btn {
+          padding: 0.8rem 3rem;
+          color: $text-main-color;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &-copyrights {
+    background: $bg-color-beige;
+    .footer-brand {
+      display: block;
+    }
+    .copyrights {
+      margin-bottom: 0;
+    }
+  }
+}

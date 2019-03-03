@@ -227,6 +227,11 @@ $text-white: $white;
   }
   .category-slider-wrapper {
     background-color: $bg-color-secondary;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 100px !important; //Push down footer, set the background img
+
     .category-slider {
       .category-item {
         font-family: $gotham-rounded-bold;
@@ -292,6 +297,9 @@ $text-white: $white;
         width: 40%;
       }
     }
+    .category-slider-wrapper {
+      padding-bottom: 150px !important; //Push down footer, set the background img
+    }
   }
 }
 
@@ -314,6 +322,9 @@ $text-white: $white;
         left: 0;
         width: 21%;
       }
+    }
+    .category-slider-wrapper {
+      padding-bottom: 200px !important; //Push down footer, set the background img
     }
   }
 }
@@ -346,6 +357,8 @@ $text-white: $white;
       }
     }
     .category-slider-wrapper {
+      padding-bottom: 250px !important; //Push down footer, set the background img
+
       .category-slider {
         .category-item {
           border-right: 0.5px solid #fff;
@@ -369,6 +382,9 @@ $text-white: $white;
           padding: 0.8rem 1.19rem;
         }
       }
+    }
+    .category-slider-wrapper {
+      padding-bottom: 500px !important; //Push down footer, set the background img
     }
   }
 }
