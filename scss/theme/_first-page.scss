@@ -164,40 +164,77 @@ $text-white: $white;
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    .container {
+      position: relative;
+    }
+    .ask-magzy-img-wrapper {
+      margin: 0;
+      position: absolute;
+      top: -12%;
+      left: 0;
+      width: 30%;
+      .ask-magzy-img {
+        display: block;
+        width: 100;
+      }
+    }
 
     .ask-magzy-form {
+      .form-control {
+        height: calc(1.5em + 1.8rem + 2px);
+      }
+
       .select-gender {
         font-family: $gotham-rounded-bold;
+        .select2-selection__rendered {
+          font-family: $gotham-rounded-bold;
+        }
       }
       .select2-container--default {
         .select2-selection--single {
           background-color: $bg-gray-light-100;
           border: 1px solid $text-color-gray-400;
           border-radius: 2.25rem;
-          height: calc(2em + 1.8rem + 2px);
+          height: calc(2em + 1.3rem + 1px);
           padding: 0.9rem 1.5rem;
           font-size: 1.125rem;
+          position: relative;
 
           .select2-selection__rendered {
             color: $text-main-color;
             line-height: 1.5;
             padding-left: 0;
             padding-right: 0;
+            font-family: $gotham-rounded-bold;
           }
           .select2-selection__arrow {
             position: absolute;
             right: 5px;
-            bottom: 50%;
-            transform: translateY(50%);
+            top: 50%;
+            transform: translateY(-50%);
             font-size: 1.5rem;
+            line-height: 1.5rem;
             color: $text-main-color;
           }
         }
+      }
+
+      .theme-btn {
+        padding: 0.8rem 3rem;
       }
     }
   }
 }
 @media (min-width: 576px) {
+  .main-content {
+    .ask-magzy {
+      .ask-magzy-img-wrapper {
+        top: -23%;
+        left: 0;
+        width: 40%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -211,6 +248,13 @@ $text-white: $white;
         .owl-next {
           right: -13px;
         }
+      }
+    }
+    .ask-magzy {
+      .ask-magzy-img-wrapper {
+        top: -23%;
+        left: 0;
+        width: 40%;
       }
     }
   }
@@ -227,6 +271,13 @@ $text-white: $white;
         .owl-next {
           right: -25px;
         }
+      }
+    }
+    .ask-magzy {
+      .ask-magzy-img-wrapper {
+        top: 76%;
+        left: 0;
+        width: 21%;
       }
     }
   }
@@ -249,6 +300,28 @@ $text-white: $white;
         }
         .owl-next {
           right: -40px;
+        }
+      }
+    }
+    .ask-magzy {
+      .ask-magzy-img-wrapper {
+        top: 7%;
+        left: -8%;
+        width: 21%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-content {
+    .ask-magzy {
+      .ask-magzy-form {
+        .form-control {
+          padding: 0.9rem 1rem;
+        }
+        .theme-btn {
+          padding: 0.8rem 1.19rem;
         }
       }
     }

@@ -11,6 +11,10 @@ $bg-color-primary: $primary;
   padding: 0.9rem 3rem;
   font-size: 1.25rem;
   color: $text-white;
+
+  &:hover {
+    color: $text-white;
+  }
 }
 
 //Product-item
@@ -51,7 +55,7 @@ $bg-color-primary: $primary;
     }
   }
 }
-
+//Stickers
 .sticker-wrapper {
   position: absolute;
   top: 10px;
@@ -86,7 +90,7 @@ $bg-color-primary: $primary;
 
 .form-control {
   height: calc(2em + 1.8rem + 2px);
-  padding: 0.9rem 1.2rem;
+  padding: 0.9rem 1.625rem;
   font-size: 1.125rem;
   background-color: $bg-gray-light-100;
   &:focus {

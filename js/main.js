@@ -266,7 +266,7 @@ $(document).ready(function() {
   //Select elements
   selectGender.select2({
     minimumResultsForSearch: -1,
-    width: '100%'
+    width: '100%',
   });
   selectCategory.select2({
     minimumResultsForSearch: -1,
