@@ -19,6 +19,7 @@ $(document).ready(function() {
   const newestProductsSlider = $('.newest-products-slider');
   const allAgesProductsSlider = $('.all-ages-products-slider');
   const recommendationsSlider = $('.recommendations-slider');
+  const categorySlider = $('.category-slider');
   const selectGender = $('.select-gender');
   const selectCategory = $('.select-category');
 
@@ -261,12 +262,40 @@ $(document).ready(function() {
         }
       }
     });
+
+    //Category slider
+    categorySlider.owlCarousel({
+      loop: true,
+      autoplay: true,
+      dots: false,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        400: {
+          items: 1
+        },
+        576: {
+          items: 2,
+          margin: 10
+        },
+        992: {
+          items: 3
+        },
+        1200: {
+          items: 4
+        }
+      }
+    });
   }
 
   //Select elements
   selectGender.select2({
     minimumResultsForSearch: -1,
-    width: '100%',
+    width: '100%'
   });
   selectCategory.select2({
     minimumResultsForSearch: -1,
