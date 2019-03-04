@@ -22,6 +22,11 @@ $(document).ready(function() {
   const categorySlider = $('.category-slider');
   const selectGender = $('.select-gender');
   const selectCategory = $('.select-category');
+  const selectBrand = $('.select-brand');
+  const selectAge = $('.select-age');
+  const selectSort = $('.select-sort');
+  const priceSlider = $('.price-slider');
+  const searchProducts = $('.search-products');
 
   const mainContent = $('.main-content');
 
@@ -101,8 +106,10 @@ $(document).ready(function() {
     const scroll = $(window).scrollTop();
     if (scroll > 50) {
       header.removeClass('py-2').css('background', 'rgba(255, 255, 255, 1)');
+      searchProducts.css('top', '100px');
     } else {
       header.addClass('py-2').css('background', 'rgba(255, 255, 255, 0.7)');
+      searchProducts.css('top', '115px');
     }
   }
 
@@ -293,11 +300,28 @@ $(document).ready(function() {
   }
 
   //Select elements
+  //Gender
   selectGender.select2({
     minimumResultsForSearch: -1,
     width: '100%'
   });
+  //Category
   selectCategory.select2({
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+  //Brand
+  selectBrand.select2({
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+  //Age
+  selectAge.select2({
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+  //Sort
+  selectSort.select2({
     minimumResultsForSearch: -1,
     width: '100%'
   });
@@ -305,6 +329,30 @@ $(document).ready(function() {
   // Replace built-in arrow with fa icon
   $('b[role="presentation"]').hide();
   $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
+
+  //Price input slider
+  priceSlider.jRange({
+    from: 0,
+    to: 3000,
+    width: '100%',
+    showLabels: false,
+    isRange: true,
+    theme: 'theme-blue',
+    onstatechange: function(value) {
+      getRangeValue(value);
+    }
+  });
+
+  $(priceSlider).jRange('setValue', '0,3000');
+
+  function getRangeValue(value) {
+    const valArr = JSON.parse('[' + value + ']');
+    const lowVal = valArr[0];
+    const highVal = valArr[1];
+    $('.low-val').text(`${lowVal}`);
+    $('.high-val').text(`${highVal},00 DIN`);
+  }
+  //getRangeValue(value);
 
   // // EASE SCROLL
 

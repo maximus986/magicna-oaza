@@ -2,6 +2,8 @@ $bg-color-white: $white;
 $bg-color-secondary: $secondary;
 $bg-color-tertiary: $tertiary;
 $bg-gray-light-100: $gray-100;
+$bg-range-back-bar-color: $indigo;
+$bg-color-white: $white;
 $text-color-gray-100: $gray-100;
 $text-color-gray-200: $gray-200;
 $text-color-gray-400: $gray-400;
@@ -11,7 +13,181 @@ $text-white: $white;
 
 .main-content {
   //   margin-top: 116px;
+
+  .search-products {
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 115px;
+    z-index: 1020;
+    background: $bg-color-secondary;
+    padding: 10px 0;
+    transition: 0.3s linear;
+    &-form {
+      .form-control {
+        height: calc(1.5em + 1.6rem + 2.4px);
+      }
+      .form-group {
+        margin: 0;
+      }
+
+      .keyword {
+        background: transparent;
+        color: $text-white;
+        border-color: $text-white;
+        border-right: none;
+        &::-webkit-input-placeholder {
+          color: $text-white;
+        }
+        &:-ms-input-placeholder {
+          color: $text-white;
+        }
+        &::-ms-input-placeholder {
+          color: $text-white;
+        }
+        &::placeholder {
+          color: $text-white;
+        }
+        &-search-icon {
+          text-align: center;
+          color: $text-white;
+          font-size: 1.5rem;
+          border-color: $text-white;
+          border-left: none;
+          padding: 0 20px 0 0;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+
+      .price-range {
+        font-family: $gotham-rounded-bold;
+        color: $text-white;
+        font-size: 1rem;
+        .low-val,
+        .high-val {
+          font-variant-numeric: tabular-nums;
+        }
+      }
+
+      .slider-container {
+        font-family: $gotham-rounded-book;
+        padding-left: 5px;
+      }
+
+      .theme-blue .back-bar {
+        height: 1px;
+        border-radius: 0;
+        background-color: $bg-range-back-bar-color;
+        background-color: $bg-range-back-bar-color;
+        background-image: none;
+
+        .selected-bar {
+          height: 1px;
+          border-radius: 0;
+          background-color: $bg-color-white;
+          background-image: none;
+        }
+        .pointer {
+          width: 18px;
+          height: 18px;
+          top: -8px;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 50%;
+          border: 2px solid $text-white;
+          background-color: $bg-color-secondary;
+          background-image: none;
+          cursor: grab;
+        }
+        .high {
+          background-color: $bg-color-white;
+        }
+      }
+      .scale {
+        display: none;
+      }
+
+      .theme-btn {
+        padding: 0.72rem 3rem;
+      }
+    }
+  }
+
+  .filter-products {
+    margin-top: 140px;
+    .filter {
+      font-size: 1.125rem;
+      padding: 16px 28px 16px 23px;
+      margin: 0;
+      border-radius: 12px;
+      background: $bg-gray-light-100;
+      &-type {
+        text-transform: uppercase;
+      }
+      &-type-item {
+        margin-right: 32px;
+      }
+
+      .clear-filter {
+        width: 8px;
+        height: 4px;
+        line-height: 2px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .form-group {
+      margin: 0;
+    }
+    .select2-container {
+      display: block;
+    }
+    .select2-container--default .select2-selection--single {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      height: auto;
+      padding: 0 35px 0 0;
+      font-size: 1.125rem;
+      position: relative;
+    }
+  }
+
+  .products {
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    //padding-bottom: 200px !important; //Push down footer, set the background img
+  }
+  label {
+    font-size: 0.875rem;
+    letter-spacing: 3.71px;
+    color: $text-white;
+    text-transform: uppercase;
+  }
 }
-.search-products {
-  background: $bg-color-secondary;
+
+@media (min-width: 1200px) {
+  .main-content {
+    .search-products {
+      display: block;
+      padding: 15px 0;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-content {
+    .search-products {
+      display: block;
+      padding: 42px 0;
+    }
+  }
 }
