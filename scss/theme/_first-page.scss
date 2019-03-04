@@ -262,6 +262,35 @@ $text-white: $white;
       }
     }
   }
+  .phone-numbers {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1500;
+    margin: 0 24px 24px 0;
+    padding: 14px 20px 14px 17px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: $gotham-rounded-bold;
+
+    a {
+      color: inherit;
+      display: block;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 17.64px;
+      height: 17.64px;
+      right: 24px;
+      bottom: -18px;
+      border-width: 8.82px;
+      border-style: solid;
+      border-color: transparent;
+      border-top-color: $bg-color-tertiary;
+      border-radius: 2px;
+    }
+  }
 }
 @media (min-width: 576px) {
   .main-content {
