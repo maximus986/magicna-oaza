@@ -1466,7 +1466,8 @@ img {
   .main-header .nav-item {
     padding: 0 12px !important; }
   .main-header .nav-action .search-form {
-    width: calc(77% - 73.3px - 34.2px); }
+    width: calc(79% - 73.3px - 34.2px);
+    left: 17%; }
   .main-header .submenu {
     left: 20.5%; }
     .main-header .submenu-level-2 {
