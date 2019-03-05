@@ -209,8 +209,6 @@ $(document).ready(function() {
     });
     //All ages products slider
     allAgesProductsSlider.owlCarousel({
-      loop: true,
-      autoplay: true,
       autoplayHoverPause: true,
       dots: true,
       responsive: {
@@ -334,7 +332,7 @@ $(document).ready(function() {
   priceSlider.jRange({
     from: 0,
     to: 3000,
-    width: '100%',
+    width: '88%',
     showLabels: false,
     isRange: true,
     theme: 'theme-blue',
@@ -352,7 +350,6 @@ $(document).ready(function() {
     $('.low-val').text(`${lowVal}`);
     $('.high-val').text(`${highVal},00 DIN`);
   }
-  //getRangeValue(value);
 
   // // EASE SCROLL
 

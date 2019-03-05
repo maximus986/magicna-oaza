@@ -214,6 +214,11 @@ $text-white: $white;
     .search-products {
       display: block;
       padding: 42px 0;
+      &-form {
+        .theme-btn {
+          padding: 0.68rem 3.8rem;
+        }
+      }
     }
     .products {
       padding-bottom: 350px;

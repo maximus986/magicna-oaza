@@ -226,6 +226,12 @@ $text-white: $white;
         .owl-next {
           color: $text-white;
         }
+        .owl-prev {
+          left: 0;
+        }
+        .owl-next {
+          right: 0;
+        }
       }
     }
   }
@@ -319,6 +325,16 @@ $text-white: $white;
     }
     .category-slider-wrapper {
       padding-bottom: 200px !important; //Push down footer, set the background img
+      .category-slider {
+        .owl-nav {
+          .owl-prev {
+            left: -20px;
+          }
+          .owl-next {
+            right: -20px;
+          }
+        }
+      }
     }
   }
 }

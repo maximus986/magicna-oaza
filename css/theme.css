@@ -1499,7 +1499,7 @@ img {
     .small-cart-content .small-cart-product-price .small-cart-detail {
       margin-bottom: 20px; }
   .small-cart-content .small-cart-products {
-    height: 50vh;
+    height: 43vh;
     overflow: scroll;
     padding-bottom: 30px;
     border-bottom: 2px solid #cfcfcf; }
@@ -1749,6 +1749,10 @@ img {
   .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev,
   .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
     color: #fff; }
+  .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev {
+    left: 0; }
+  .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
+    right: 0; }
 .main-content .phone-numbers {
   position: fixed;
   bottom: 0;
@@ -1805,7 +1809,11 @@ img {
     left: 0;
     width: 21%; }
   .main-content .category-slider-wrapper {
-    padding-bottom: 200px !important; } }
+    padding-bottom: 200px !important; }
+    .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev {
+      left: -20px; }
+    .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
+      right: -20px; } }
 @media (min-width: 1200px) {
   .main-content .brands-slider-wrapper {
     padding-top: 3.75rem !important;
@@ -2146,6 +2154,8 @@ img {
   .main-content .search-products {
     display: block;
     padding: 42px 0; }
+    .main-content .search-products-form .theme-btn {
+      padding: 0.68rem 3.8rem; }
   .main-content .products {
     padding-bottom: 350px; } }
 .main-footer {
