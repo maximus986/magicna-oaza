@@ -2119,21 +2119,34 @@ img {
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: 40px; }
+  padding: 40px 0; }
 .main-content label {
   font-size: 0.875rem;
   letter-spacing: 3.71px;
   color: #fff;
   text-transform: uppercase; }
 
+@media (min-width: 576px) {
+  .main-content .products {
+    padding-bottom: 80px; } }
+@media (min-width: 768px) {
+  .main-content .products {
+    padding-bottom: 90px; } }
+@media (min-width: 992px) {
+  .main-content .products {
+    padding-bottom: 130px; } }
 @media (min-width: 1200px) {
   .main-content .search-products {
     display: block;
-    padding: 15px 0; } }
+    padding: 15px 0; }
+  .main-content .products {
+    padding-bottom: 240px; } }
 @media (min-width: 1400px) {
   .main-content .search-products {
     display: block;
-    padding: 42px 0; } }
+    padding: 42px 0; }
+  .main-content .products {
+    padding-bottom: 350px; } }
 .main-footer {
   background: #ffe19c; }
   .main-footer-content {

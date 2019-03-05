@@ -163,8 +163,7 @@ $text-white: $white;
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 40px;
-    //padding-bottom: 200px !important; //Push down footer, set the background img
+    padding: 40px 0;
   }
   label {
     font-size: 0.875rem;
@@ -174,11 +173,38 @@ $text-white: $white;
   }
 }
 
+@media (min-width: 576px) {
+  .main-content {
+    .products {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    .products {
+      padding-bottom: 90px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    .products {
+      padding-bottom: 130px;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .main-content {
     .search-products {
       display: block;
       padding: 15px 0;
+    }
+    .products {
+      padding-bottom: 240px;
     }
   }
 }
@@ -188,6 +214,9 @@ $text-white: $white;
     .search-products {
       display: block;
       padding: 42px 0;
+    }
+    .products {
+      padding-bottom: 350px;
     }
   }
 }
