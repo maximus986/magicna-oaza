@@ -9,7 +9,8 @@ $(document).ready(function() {
   const searchIcon = $('.search-icon');
   const searchForm = $('.search-form');
   const smallCartIcon = $('.small-cart-icon');
-  const overlay = $('.overlay-body');
+  const overlayHeader = $('.overlay-header');
+  const overlayBody = $('.overlay-body');
   const smallCart = $('.small-cart-content');
   const smallCartProducts = $('.small-cart-products');
   const owlCarousel = $('.owl-carousel');
@@ -29,6 +30,7 @@ $(document).ready(function() {
   const selectSort = $('.select-sort');
   const priceSlider = $('.price-slider');
   const searchProducts = $('.search-products');
+  const searchProductsToggler = $('.search-products-toggler');
 
   const mainContent = $('.main-content');
 
@@ -39,6 +41,7 @@ $(document).ready(function() {
   function setMainMarginTop() {
     const headerHeight = header.height();
     mainContent.css('marginTop', headerHeight);
+    searchProducts.css('top', headerHeight);
   }
 
   //Animate hamburger button
@@ -81,14 +84,25 @@ $(document).ready(function() {
     $(this)
       .next()
       .addClass('active');
-    overlay.show();
+    overlayHeader.show();
     searchForm.hide();
     e.preventDefault();
   });
 
-  overlay.click(function() {
+  overlayHeader.click(function() {
     $(this).hide();
     smallCart.removeClass('active');
+  });
+
+  //Show search products
+  searchProductsToggler.click(function(e) {
+    $(this)
+      .parent()
+      .toggleClass('active');
+    $(this).toggleClass('fa-angle-right fa-angle-left');
+    overlayBody.toggleClass('active');
+    searchForm.hide();
+    e.preventDefault();
   });
 
   //Custom scrollbar
@@ -97,23 +111,23 @@ $(document).ready(function() {
   });
 
   //Reduce header padding on scroll
-  $(window).scroll(function() {
-    animateHeader(); //Animate header on window scroll
-  });
+  // $(window).scroll(function() {
+  //   animateHeader(); //Animate header on window scroll
+  // });
 
-  animateHeader(); //Animate header on window load
+  //animateHeader(); //Animate header on window load
 
   //Header animation function
-  function animateHeader() {
-    const scroll = $(window).scrollTop();
-    if (scroll > 50) {
-      header.addClass('py-2');
-      searchProducts.css('top', '100px');
-    } else {
-      header.removeClass('py-2');
-      searchProducts.css('top', '115px');
-    }
-  }
+  // function animateHeader() {
+  //   const scroll = $(window).scrollTop();
+  //   if (scroll > 50) {
+  //     header.addClass('py-2');
+  //     // searchProducts.css('top', '100px');
+  //   } else {
+  //     header.removeClass('py-2');
+  //     //searchProducts.css('top', '115px');
+  //   }
+  // }
 
   //Sliders
   if (owlCarousel.length > 0) {
@@ -336,7 +350,7 @@ $(document).ready(function() {
   $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
   //Price input slider
-  if (priceSlider.lenght > 0) {
+  if (priceSlider.length > 0) {
     priceSlider.jRange({
       from: 0,
       to: 3000,

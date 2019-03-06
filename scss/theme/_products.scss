@@ -12,17 +12,31 @@ $text-main-color: $gray-700;
 $text-white: $white;
 
 .main-content {
-  //   margin-top: 116px;
-
   .search-products {
-    display: none;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 115px;
-    z-index: 1020;
+    position: fixed;
+    left: -90%;
+    width: calc(100vw - 10%);
+    height: 100vh;
+    z-index: 1040;
     background: $bg-color-secondary;
     padding: 10px 0;
-    transition: 0.3s linear;
+    transition: 0.6s linear;
+    &.active {
+      left: 0;
+    }
+    &-toggler {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      color: $text-white;
+      font-size: 2rem;
+      width: calc(100vw - 100%);
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background: $bg-color-secondary;
+      cursor: pointer;
+    }
     &-form {
       .form-control {
         height: calc(1.5em + 1.6rem + 2.4px);
@@ -117,7 +131,7 @@ $text-white: $white;
   }
 
   .filter-products {
-    margin-top: 140px;
+    margin-top: 80px;
     .filter {
       font-size: 1.125rem;
       padding: 16px 28px 16px 23px;
@@ -171,6 +185,17 @@ $text-white: $white;
     color: $text-white;
     text-transform: uppercase;
   }
+  .overlay-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($text-main-color, 0.38);
+    &.active {
+      display: block !important;
+    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -183,6 +208,16 @@ $text-white: $white;
 
 @media (min-width: 768px) {
   .main-content {
+    .search-products {
+      position: sticky;
+      left: 0;
+      width: auto;
+      height: auto;
+      padding: 4px 0;
+      &-toggler {
+        display: none;
+      }
+    }
     .products {
       padding-bottom: 90px;
     }
@@ -201,7 +236,7 @@ $text-white: $white;
   .main-content {
     .search-products {
       display: block;
-      padding: 15px 0;
+      padding: 6px 0;
     }
     .products {
       padding-bottom: 240px;
@@ -213,7 +248,6 @@ $text-white: $white;
   .main-content {
     .search-products {
       display: block;
-      padding: 42px 0;
       &-form {
         .theme-btn {
           padding: 0.68rem 3.8rem;

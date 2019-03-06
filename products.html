@@ -44,7 +44,7 @@
   </head>
   <body>
     <!-- Header start -->
-    <header class="main-header fixed-top py-2">
+    <header class="main-header fixed-top">
       <div class="container">
         <!-- Navigaion start -->
         <nav class="navbar navbar-expand-md navbar-light p-0 align-items-center">
@@ -312,7 +312,7 @@
         </nav>
         <!-- Navigaion end -->
       </div>
-      <div class="overlay-body"></div>
+      <div class="overlay-header"></div>
     </header>
     <!-- Header end -->
 
@@ -320,10 +320,11 @@
     <main class="main-content">
       <!-- Search products start -->
       <section class="search-products">
+        <span class="fa fa-angle-right search-products-toggler"></span>
         <div class="container">
           <form action="" method="get" class="search-products-form">
             <div class="row align-items-start">
-              <div class="col-xl-3 col-xxl-2">
+              <div class="col-md-4 col-xl-3 col-xxl-2 mb-2">
                 <div class="form-group">
                   <label for="keyword">Pretraga</label>
                   <div class="input-group">
@@ -337,7 +338,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-xxl-2">
+              <div class="col-sm-6 col-md-4 col-xl-3 col-xxl-2 mb-2">
                   <div class="form-group">
                     <label for="brand">Brend</label>
                     <select name="brand" id="brand" class="form-control select-brand">
@@ -346,7 +347,7 @@
                     </select>
                   </div>
               </div>
-              <div class="col-xl-2 col-xxl-2">
+              <div class="col-sm-6 col-md-4 col-xl-2 col-xxl-2 mb-2">
                 <div class="form-group">
                   <label for="category">Kategorije</label>
                   <select name="category" id="category" class="form-control select-category">
@@ -358,7 +359,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-xl-2 col-xxl-2">
+              <div class="col-sm-6 col-md-4 col-xl-2 col-xxl-2 mb-2">
                 <div class="form-group">
                   <label for="age">Uzrast</label>
                   <select name="age" id="age" class="form-control select-age">
@@ -369,16 +370,16 @@
                   </select>
                 </div>
               </div>
-              <div class="col-xl-2 col-xxl-2">
+              <div class="col-sm-6 col-md-4 col-xl-2 col-xxl-2 mb-4 mb-md-2">
                 <div class="form-group">
                   <label for="price-slider">Cena</label>
                   <p class="price-range"><span class="low-val">0</span><sapn>-</sapn><span class="high-val">3000,00</span></p>
                     <input type="hidden" id="price-slider" class="price-slider"/>
                 </div>
               </div>
-              <div class="col-12 col-xxl-2 mt-xl-2 mt-xxl-0 align-self-end">
-                <div class="form-group">
-                  <button href="#" class="btn btn-tertiary theme-btn">Pretraži</button>
+              <div class="col-12 col-md-4 col-xxl-2 mt-xl-2 mt-xxl-0 align-self-end">
+                <div class="form-group text-center text-xl-left">
+                  <button href="#" class="btn btn-tertiary theme-btn ">Pretraži</button>
               </div>
             </div>
           </form>
@@ -1028,7 +1029,16 @@
           </div>
         </div>
       </section>
-      <!-- Products start -->
+      <!-- Products end -->
+      <!-- Phone numbers start -->
+      <div class="phone-numbers bg-tertiary text-white d-flex align-items-center">
+        <img src="img/phone-numbers-img/img-01.png" alt="Phone" class="phone-img">
+        <div class="numbers d-none">
+          <a href="tel:0117703373">011 770 33 73</a>
+          <a href="tel:0653255997">065 325 59 97</a>
+        </div>
+      </div><!-- Phone numbers end -->
+      <div class="overlay-body d-none"></div>
     </main>
     <!-- Main-content end -->
     <!-- Main footer start -->

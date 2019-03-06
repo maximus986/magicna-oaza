@@ -9,6 +9,7 @@ $text-main-color: $gray-700;
 
 .main-header {
   background: $bg-white;
+  z-index: 1050;
   transition: 0.3s linear;
   .navbar-brand {
     max-width: 35%;
@@ -199,7 +200,7 @@ $text-main-color: $gray-700;
       display: none;
     }
   }
-  .overlay-body {
+  .overlay-header {
     position: fixed;
     top: 0;
     left: 0;
