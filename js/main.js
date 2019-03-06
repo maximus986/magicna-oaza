@@ -22,6 +22,8 @@ $(document).ready(function() {
   const categorySlider = $('.category-slider');
   const selectGender = $('.select-gender');
   const selectCategory = $('.select-category');
+  const phoneImg = $('.phone-img');
+  const phoneNumbers = $('.numbers');
   const selectBrand = $('.select-brand');
   const selectAge = $('.select-age');
   const selectSort = $('.select-sort');
@@ -296,6 +298,12 @@ $(document).ready(function() {
     });
   }
 
+  //Phone numbers
+  phoneImg.click(function() {
+    $(this).toggleClass('mr-3');
+    phoneNumbers.toggleClass('active');
+  });
+
   //Select elements
   //Gender
   selectGender.select2({
@@ -328,26 +336,28 @@ $(document).ready(function() {
   $('.select2-selection__arrow').append('<i class="fa fa-angle-down"></i>');
 
   //Price input slider
-  priceSlider.jRange({
-    from: 0,
-    to: 3000,
-    width: '88%',
-    showLabels: false,
-    isRange: true,
-    theme: 'theme-blue',
-    onstatechange: function(value) {
-      getRangeValue(value);
+  if (priceSlider.lenght > 0) {
+    priceSlider.jRange({
+      from: 0,
+      to: 3000,
+      width: '88%',
+      showLabels: false,
+      isRange: true,
+      theme: 'theme-blue',
+      onstatechange: function(value) {
+        getRangeValue(value);
+      }
+    });
+
+    $(priceSlider).jRange('setValue', '0,3000');
+
+    function getRangeValue(value) {
+      const valArr = JSON.parse('[' + value + ']');
+      const lowVal = valArr[0];
+      const highVal = valArr[1];
+      $('.low-val').text(`${lowVal}`);
+      $('.high-val').text(`${highVal},00 DIN`);
     }
-  });
-
-  $(priceSlider).jRange('setValue', '0,3000');
-
-  function getRangeValue(value) {
-    const valArr = JSON.parse('[' + value + ']');
-    const lowVal = valArr[0];
-    const highVal = valArr[1];
-    $('.low-val').text(`${lowVal}`);
-    $('.high-val').text(`${highVal},00 DIN`);
   }
 
   // // EASE SCROLL

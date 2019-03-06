@@ -1794,6 +1794,10 @@ img {
     border-color: transparent;
     border-top-color: #ffc302;
     border-radius: 2px; }
+  .main-content .phone-numbers .phone-img {
+    cursor: pointer; }
+  .main-content .phone-numbers .numbers.active {
+    display: block !important; }
 
 @media (min-width: 576px) {
   .main-content .ask-magzy .ask-magzy-img-wrapper {
@@ -1839,7 +1843,12 @@ img {
     .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev {
       left: -20px; }
     .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
-      right: -20px; } }
+      right: -20px; }
+  .main-content .phone-numbers .phone-img {
+    cursor: auto;
+    margin-right: 1rem; }
+  .main-content .phone-numbers .numbers {
+    display: block !important; } }
 @media (min-width: 1200px) {
   .main-content .brands-slider-wrapper {
     padding-top: 3.75rem !important;

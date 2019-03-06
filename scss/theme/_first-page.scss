@@ -100,6 +100,7 @@ $text-white: $white;
       }
     }
   }
+  
   .all-ages-products-slider {
     .all-ages-products-link {
       display: block;
@@ -265,6 +266,14 @@ $text-white: $white;
       border-top-color: $bg-color-tertiary;
       border-radius: 2px;
     }
+    .phone-img {
+      cursor: pointer;
+    }
+    .numbers {
+      &.active {
+        display: block !important;
+      }
+    }
   }
 }
 @media (min-width: 576px) {
@@ -371,6 +380,15 @@ $text-white: $white;
             right: -20px;
           }
         }
+      }
+    }
+    .phone-numbers {
+      .phone-img {
+        cursor: auto;
+        margin-right: 1rem;
+      }
+      .numbers {
+        display: block !important;
       }
     }
   }
