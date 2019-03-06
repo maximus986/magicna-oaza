@@ -1482,12 +1482,13 @@ img {
     top: 11%; } }
 .small-cart-content {
   position: fixed;
-  width: 280px;
+  max-width: 660px;
+  width: 90%;
   height: 100vh;
   top: 0;
   right: -100%;
   background: #fff;
-  z-index: 1100;
+  z-index: 1600;
   padding: 5px 10px;
   transition: 0.6s linear; }
   .small-cart-content.active {
@@ -1509,7 +1510,7 @@ img {
       background: #f6f2ff; }
     .small-cart-content .small-cart-products .small-cart-product-detail {
       position: relative;
-      padding-right: 25px; }
+      padding-right: 30px; }
       .small-cart-content .small-cart-products .small-cart-product-detail .small-cart-product-title {
         line-height: 1.2;
         max-height: 3rem;
@@ -1541,7 +1542,8 @@ img {
       color: #494949; }
   .small-cart-content .small-cart-action {
     position: absolute;
-    left: calc(35% - 52px);
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 5px; }
     .small-cart-content .small-cart-action .small-cart-action-btn-continue {
       background: #e0e0e0;
@@ -1551,9 +1553,19 @@ img {
       font-size: 1.2rem;
       color: #fff; }
 
+@media (min-width: 400px) {
+  .small-cart-content .small-cart-product-img {
+    width: 30% !important; }
+  .small-cart-content .small-cart-product-detail {
+    width: 70% !important; } }
+@media (min-width: 576px) {
+  .small-cart-content {
+    width: 70%; } }
+@media (min-width: 768px) {
+  .small-cart-content {
+    width: 50%; } }
 @media (min-width: 992px) {
   .small-cart-content {
-    width: 450px;
     padding: 30px 15px; }
     .small-cart-content .small-cart-products {
       height: 45vh; }
@@ -1570,7 +1582,8 @@ img {
       align-items: flex-start;
       position: static;
       left: auto;
-      bottom: auto; }
+      bottom: auto;
+      transform: translateX(0); }
       .small-cart-content .small-cart-action .small-cart-action-btn-continue {
         font-size: 1rem;
         padding: 0.85rem 1.75rem; }
@@ -1579,7 +1592,7 @@ img {
         padding: 0.7rem 4.1rem; } }
 @media (min-width: 1200px) {
   .small-cart-content {
-    width: 500px; }
+    width: 90%; }
     .small-cart-content .small-cart-products {
       height: 40vh; }
     .small-cart-content .small-cart-price {
@@ -1760,7 +1773,7 @@ img {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 1500;
+  z-index: 1000;
   margin: 0 24px 24px 0;
   padding: 14px 20px 14px 17px;
   border-radius: 12px;
