@@ -1195,7 +1195,7 @@ img {
   .hamburger {
     display: none; } }
 .main-header {
-  background: rgba(255, 255, 255, 0.7);
+  background: #fff;
   transition: 0.3s linear; }
   .main-header .navbar-brand {
     max-width: 35%;
@@ -1593,8 +1593,7 @@ img {
   position: relative;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh; }
+  background-repeat: no-repeat; }
 .main-content .lead-slider .owl-dots {
   position: absolute;
   left: 0;

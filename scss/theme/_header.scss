@@ -8,7 +8,7 @@ $text-white: $white;
 $text-main-color: $gray-700;
 
 .main-header {
-  background: rgba($bg-white, 0.7);
+  background: $bg-white;
   transition: 0.3s linear;
   .navbar-brand {
     max-width: 35%;

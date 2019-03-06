@@ -31,13 +31,13 @@ $(document).ready(function() {
   const mainContent = $('.main-content');
 
   //Set main-content margin-top depending on header's height
-  // $(window).resize(setMainMarginTop);
-  // setMainMarginTop();
+  $(window).resize(setMainMarginTop);
+  setMainMarginTop();
 
-  // function setMainMarginTop() {
-  //   const headerHeight = header.height();
-  //   mainContent.css('marginTop', headerHeight);
-  // }
+  function setMainMarginTop() {
+    const headerHeight = header.height();
+    mainContent.css('marginTop', headerHeight);
+  }
 
   //Animate hamburger button
   hamburger.click(function() {
@@ -105,10 +105,10 @@ $(document).ready(function() {
   function animateHeader() {
     const scroll = $(window).scrollTop();
     if (scroll > 50) {
-      header.removeClass('py-2').css('background', 'rgba(255, 255, 255, 1)');
+      header.addClass('py-2');
       searchProducts.css('top', '100px');
     } else {
-      header.addClass('py-2').css('background', 'rgba(255, 255, 255, 0.7)');
+      header.removeClass('py-2');
       searchProducts.css('top', '115px');
     }
   }
