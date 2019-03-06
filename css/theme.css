@@ -2147,7 +2147,7 @@ img {
   .main-content .search-products-form .theme-btn {
     padding: 0.72rem 3rem; }
 .main-content .filter-products {
-  margin-top: 80px; }
+  margin-top: 150px; }
   .main-content .filter-products .filter {
     font-size: 1.125rem;
     padding: 16px 28px 16px 23px;
@@ -2210,6 +2210,8 @@ img {
     padding: 4px 0; }
     .main-content .search-products-toggler {
       display: none; }
+  .main-content .filter-products {
+    margin-top: 20px; }
   .main-content .products {
     padding-bottom: 90px; } }
 @media (min-width: 992px) {
@@ -2226,6 +2228,8 @@ img {
     display: block; }
     .main-content .search-products-form .theme-btn {
       padding: 0.68rem 3.8rem; }
+  .main-content .filter-products {
+    margin-top: 46px; }
   .main-content .products {
     padding-bottom: 350px; } }
 .main-footer {

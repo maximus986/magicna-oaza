@@ -131,7 +131,7 @@ $text-white: $white;
   }
 
   .filter-products {
-    margin-top: 80px;
+    margin-top: 150px;
     .filter {
       font-size: 1.125rem;
       padding: 16px 28px 16px 23px;
@@ -218,6 +218,9 @@ $text-white: $white;
         display: none;
       }
     }
+    .filter-products {
+      margin-top: 20px;
+    }
     .products {
       padding-bottom: 90px;
     }
@@ -253,6 +256,9 @@ $text-white: $white;
           padding: 0.68rem 3.8rem;
         }
       }
+    }
+    .filter-products {
+      margin-top: 46px;
     }
     .products {
       padding-bottom: 350px;
