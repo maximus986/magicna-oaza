@@ -130,6 +130,7 @@ $text-white: $white;
       }
     }
     .owl-stage-outer {
+      overflow: initial;
       .owl-stage {
         padding-left: 0 !important;
       }

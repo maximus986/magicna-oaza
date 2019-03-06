@@ -1686,8 +1686,10 @@ img {
       padding: 30px 30px;
       background-position: left bottom;
       background-repeat: no-repeat; }
-.main-content .all-ages-products-slider .owl-stage-outer .owl-stage {
-  padding-left: 0 !important; }
+.main-content .all-ages-products-slider .owl-stage-outer {
+  overflow: initial; }
+  .main-content .all-ages-products-slider .owl-stage-outer .owl-stage {
+    padding-left: 0 !important; }
 .main-content .all-ages-products-slider .owl-dots {
   position: absolute;
   display: block;
