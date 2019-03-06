@@ -29,6 +29,8 @@ $(document).ready(function() {
   const selectAge = $('.select-age');
   const selectSort = $('.select-sort');
   const priceSlider = $('.price-slider');
+  const lowValueInput = $('.low-value-input');
+  const highValueInput = $('.high-value-input');
   const searchProducts = $('.search-products');
   const searchProductsToggler = $('.search-products-toggler');
 
@@ -371,6 +373,8 @@ $(document).ready(function() {
       const highVal = valArr[1];
       $('.low-val').text(`${lowVal}`);
       $('.high-val').text(`${highVal},00 DIN`);
+      lowValueInput.val(lowVal);
+      highValueInput.val(highVal);
     }
   }
 
