@@ -2150,14 +2150,14 @@ img {
   margin-top: 150px; }
   .main-content .filter-products .filter {
     font-size: 1.125rem;
-    padding: 16px 28px 16px 23px;
+    padding: 16px 10px 16px 10px;
     margin: 0;
     border-radius: 12px;
     background: #f9f9f9; }
     .main-content .filter-products .filter-type {
       text-transform: uppercase; }
     .main-content .filter-products .filter-type-item {
-      margin-right: 32px; }
+      margin-right: 10px; }
     .main-content .filter-products .filter .clear-filter {
       width: 8px;
       height: 4px;
@@ -2199,6 +2199,10 @@ img {
     display: block !important; }
 
 @media (min-width: 576px) {
+  .main-content .filter-products .filter {
+    padding: 16px 28px 16px 23px; }
+    .main-content .filter-products .filter-type-item {
+      margin-right: 32px; }
   .main-content .products {
     padding-bottom: 80px; } }
 @media (min-width: 768px) {

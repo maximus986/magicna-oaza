@@ -134,7 +134,7 @@ $text-white: $white;
     margin-top: 150px;
     .filter {
       font-size: 1.125rem;
-      padding: 16px 28px 16px 23px;
+      padding: 16px 10px 16px 10px;
       margin: 0;
       border-radius: 12px;
       background: $bg-gray-light-100;
@@ -142,7 +142,7 @@ $text-white: $white;
         text-transform: uppercase;
       }
       &-type-item {
-        margin-right: 32px;
+        margin-right: 10px;
       }
 
       .clear-filter {
@@ -200,6 +200,14 @@ $text-white: $white;
 
 @media (min-width: 576px) {
   .main-content {
+    .filter-products {
+      .filter {
+        padding: 16px 28px 16px 23px;
+        &-type-item {
+          margin-right: 32px;
+        }
+      }
+    }
     .products {
       padding-bottom: 80px;
     }
