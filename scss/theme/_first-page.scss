@@ -69,7 +69,9 @@ $text-white: $white;
       }
     }
   }
-
+  .owl-carousel .owl-item img {
+    width: auto;
+  }
   .newest-products-slider,
   .recommendations-slider,
   .category-slider {

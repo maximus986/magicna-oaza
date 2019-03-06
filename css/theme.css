@@ -1628,6 +1628,8 @@ img {
     transition: 0.2s linear; }
     .main-content .look-all-link:hover {
       color: #ff151f; }
+.main-content .owl-carousel .owl-item img {
+  width: auto; }
 .main-content .newest-products-slider,
 .main-content .recommendations-slider,
 .main-content .category-slider {

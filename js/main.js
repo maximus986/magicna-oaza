@@ -209,7 +209,6 @@ $(document).ready(function() {
     });
     //All ages products slider
     allAgesProductsSlider.owlCarousel({
-      autoplayHoverPause: true,
       dots: true,
       responsive: {
         0: {
