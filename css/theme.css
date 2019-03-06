@@ -1786,7 +1786,13 @@ img {
   .main-content .ask-magzy .ask-magzy-img-wrapper {
     top: -23%;
     left: 0;
-    width: 40%; } }
+    width: 40%; }
+  .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item .category-item {
+    border-right: none; }
+  .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active .category-item {
+    border-right: 0.5px solid #fff; }
+  .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active + .owl-item.active .category-item {
+    border-right: none; } }
 @media (min-width: 768px) {
   .main-content .newest-products-slider .owl-nav .owl-prev,
   .main-content .recommendations-slider .owl-nav .owl-prev {
@@ -1813,6 +1819,10 @@ img {
     width: 21%; }
   .main-content .category-slider-wrapper {
     padding-bottom: 200px !important; }
+    .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active + .owl-item.active .category-item {
+      border-right: 0.5px solid #fff; }
+    .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active + .owl-item.active + .owl-item.active .category-item {
+      border-right: none; }
     .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev {
       left: -20px; }
     .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
@@ -1835,10 +1845,14 @@ img {
     width: 21%; }
   .main-content .category-slider-wrapper {
     padding-bottom: 250px !important; }
-    .main-content .category-slider-wrapper .category-slider .category-item {
+    .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active + .owl-item.active + .owl-item.active .category-item {
       border-right: 0.5px solid #fff; }
-      .main-content .category-slider-wrapper .category-slider .category-item:nth-of-type(4) {
-        border-right: none; } }
+    .main-content .category-slider-wrapper .category-slider .owl-stage .owl-item + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active .category-item {
+      border-right: none; }
+    .main-content .category-slider-wrapper .category-slider .owl-nav .owl-prev {
+      left: -32x; }
+    .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
+      right: -32px; } }
 @media (min-width: 1400px) {
   .main-content .ask-magzy .ask-magzy-form .form-control {
     padding: 0.9rem 1rem; }

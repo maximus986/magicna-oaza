@@ -276,6 +276,27 @@ $text-white: $white;
         width: 40%;
       }
     }
+    .category-slider-wrapper {
+      .category-slider {
+        .owl-stage {
+          .owl-item {
+            .category-item {
+              border-right: none;
+            }
+            & + .owl-item.active {
+              .category-item {
+                border-right: 0.5px solid #fff;
+              }
+            }
+            & + .owl-item.active + .owl-item.active {
+              .category-item {
+                border-right: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -328,6 +349,20 @@ $text-white: $white;
     .category-slider-wrapper {
       padding-bottom: 200px !important; //Push down footer, set the background img
       .category-slider {
+        .owl-stage {
+          .owl-item {
+            & + .owl-item.active + .owl-item.active {
+              .category-item {
+                border-right: 0.5px solid #fff;
+              }
+            }
+            & + .owl-item.active + .owl-item.active + .owl-item.active {
+              .category-item {
+                border-right: none;
+              }
+            }
+          }
+        }
         .owl-nav {
           .owl-prev {
             left: -20px;
@@ -372,10 +407,26 @@ $text-white: $white;
       padding-bottom: 250px !important; //Push down footer, set the background img
 
       .category-slider {
-        .category-item {
-          border-right: 0.5px solid #fff;
-          &:nth-of-type(4) {
-            border-right: none;
+        .owl-stage {
+          .owl-item {
+            & + .owl-item.active + .owl-item.active + .owl-item.active {
+              .category-item {
+                border-right: 0.5px solid #fff;
+              }
+            }
+            & + .owl-item.active + .owl-item.active + .owl-item.active + .owl-item.active {
+              .category-item {
+                border-right: none;
+              }
+            }
+          }
+        }
+        .owl-nav {
+          .owl-prev {
+            left: -32x;
+          }
+          .owl-next {
+            right: -32px;
           }
         }
       }
