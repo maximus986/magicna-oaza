@@ -2,9 +2,11 @@ $bg-gray-light-100: $gray-100;
 $text-main-color: $gray-700;
 $text-color-gray-200: $gray-200;
 $text-color-gray-400: $gray-400;
+$text-color-primary: $primary;
 $text-white: $white;
 $bg-color-tertiary: $tertiary;
 $bg-color-primary: $primary;
+$bg-color-white: $white;
 
 //Buttons
 .theme-btn {
@@ -97,5 +99,28 @@ $bg-color-primary: $primary;
     color: #494949;
     background-color: $bg-gray-light-100;
     border-color: $text-color-gray-400;
+  }
+}
+
+// Social icons
+.social {
+  margin-bottom: 20px;
+  .social-links {
+    .fa {
+      width: 33px;
+      height: 33px;
+      line-height: 33px;
+      text-align: center;
+      border-radius: 50%;
+      background: $bg-color-primary;
+      font-size: 1.3rem;
+      margin-right: 1rem;
+      color: $text-white;
+      transition: 0.3s linear;
+      &:hover {
+        color: $text-color-primary;
+        background: $bg-color-white;
+      }
+    }
   }
 }

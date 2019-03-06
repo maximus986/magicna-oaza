@@ -23,27 +23,7 @@ $text-color-primary: $primary;
         color: rgba($text-main-color, 0.44) !important;
       }
     }
-    .social {
-      margin-bottom: 20px;
-      .social-links {
-        .fa {
-          width: 33px;
-          height: 33px;
-          line-height: 33px;
-          text-align: center;
-          border-radius: 50%;
-          background: $bg-color-primary;
-          font-size: 1.3rem;
-          margin-right: 1rem;
-          color: $text-white;
-          transition: 0.3s linear;
-          &:hover {
-            color: $text-color-primary;
-            background: $bg-color-white;
-          }
-        }
-      }
-    }
+
     .newsletter {
       .newsletter-form {
         .form-control {
