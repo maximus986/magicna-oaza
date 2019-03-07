@@ -1,0 +1,28 @@
+$text-main-color: $gray-700;
+$text-color-gray-400: $gray-400;
+$text-color-secondary: $secondary;
+$text-color-tertiary: $tertiary;
+
+.main-content {
+  .registration {
+    .registration-title {
+      font-size: 2.5rem;
+    }
+    label {
+      color: $text-color-gray-400;
+      margin-bottom: 17px;
+    }
+    label.required {
+      color: $text-color-secondary;
+    }
+    .form-control {
+      height: calc(2em + 1.1rem + 3px);
+      padding: 0.9rem 1.84rem;
+      font-size: 1.125rem;
+      background-color: transparent;
+    }
+    .theme-btn {
+      padding: 0.72rem 5rem;
+    }
+  }
+}

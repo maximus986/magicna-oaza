@@ -179,12 +179,7 @@ $text-white: $white;
     background-repeat: no-repeat;
     padding: 40px 0;
   }
-  label {
-    font-size: 0.875rem;
-    letter-spacing: 3.71px;
-    color: $text-white;
-    text-transform: uppercase;
-  }
+
   .overlay-body {
     position: fixed;
     top: 0;
@@ -195,6 +190,12 @@ $text-white: $white;
     &.active {
       display: block !important;
     }
+  }
+  label {
+    font-size: 0.875rem;
+    letter-spacing: 3.71px;
+    color: $text-white;
+    text-transform: uppercase;
   }
 }
 

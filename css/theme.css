@@ -2200,11 +2200,6 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 40px 0; }
-.main-content label {
-  font-size: 0.875rem;
-  letter-spacing: 3.71px;
-  color: #fff;
-  text-transform: uppercase; }
 .main-content .overlay-body {
   position: fixed;
   top: 0;
@@ -2214,6 +2209,11 @@ img {
   background: rgba(73, 73, 73, 0.38); }
   .main-content .overlay-body.active {
     display: block !important; }
+.main-content label {
+  font-size: 0.875rem;
+  letter-spacing: 3.71px;
+  color: #fff;
+  text-transform: uppercase; }
 
 @media (min-width: 576px) {
   .main-content .filter-products .filter {
@@ -2373,6 +2373,21 @@ img {
       padding: 20px 10px; }
     .main-content .single-product-additional-info .warning {
       font-size: 0.8rem; } }
+.main-content .registration .registration-title {
+  font-size: 2.5rem; }
+.main-content .registration label {
+  color: #cfcfcf;
+  margin-bottom: 17px; }
+.main-content .registration label.required {
+  color: #8759f2; }
+.main-content .registration .form-control {
+  height: calc(2em + 1.1rem + 3px);
+  padding: 0.9rem 1.84rem;
+  font-size: 1.125rem;
+  background-color: transparent; }
+.main-content .registration .theme-btn {
+  padding: 0.72rem 5rem; }
+
 .main-footer {
   background: #ffe19c; }
   .main-footer-content {

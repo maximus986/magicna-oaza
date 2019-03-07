@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MagicnaOaza</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleksandar Maksimovic" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!--iOS compatibile-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="MagicnaOaza" />
+    <link rel="apple-touch-icon" href="apple-icon-57x57.png" />
+
+    <!--Android compatibile-->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="aplication-name" content="MagicnaOaza" />
+    <link rel="icon" type="icon/png" href="android-icon-48x48.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css" />
+    <!--Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!--bootstrap-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!--external css, like plugins ...-->
+    <link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" />
+    <!--theme css-->
+    <link rel="stylesheet" href="css/theme.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="main-header fixed-top">
+      <div class="container">
+        <!-- Navigaion start -->
+        <nav class="navbar navbar-expand-md navbar-light p-0 align-items-center">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Magicna oaza logo" />
+          </a>
+          <div class="nav-action d-flex align-items-center ml-xm-auto mr-2 mr-xm-4 mr-sm-2 order-md-last">
+            <a href="#" class="btn btn-primary btn-sm d-none d-sm-inline-block d-md-none d-lg-inline-block mr-sm-3 mr-lg-0">
+              <span>Klub </span>
+              <span class="d-none d-sm-none d-xl-inline">Magzijevih </span>
+              <span class="d-none d-sm-none d-xl-inline">Drugara</span>
+            </a>
+            <!-- Search form start -->
+            <div class="search-wrapper mx-2 mx-lg-3">
+              <a href="#" class="search-icon">
+                <img src="img/nav-action-img/img-01.png" alt="Search-icon" />
+              </a>
+              <form action="" method="" class="search-form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Pojam za pretragu..." />
+                    <div class="input-group-append">
+                      <button class="btn btn-primary search-btn" type="button">
+                        <span class="fa fa-search"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Search form end -->
+            <a href="#" class="favorites-icon d-inline-block mr-2 mr-lg-3">
+              <img src="img/nav-action-img/img-02.png" alt="Favorites icon" />
+            </a>
+            <!-- Small cart start -->
+            <div class="small-cart-wrapper mr-2 mr-lg-3">
+              <a href="#" class="small-cart-icon">
+                <img src="img/nav-action-img/img-03.png" alt="cart icon" />
+                <span class="small-cart-products-number">2</span>
+              </a>
+              <div class="small-cart-content">
+                <div class="small-cart-header text-left">
+                  <h3 class="small-cart-title text-primary">
+                    Korpa
+                  </h3>
+                  <p class="small-cart-detail text-tertiary">
+                    Korpa je prazna
+                  </p>
+                </div>
+                <div class="small-cart-products mb-3 mb-xl-2">
+                  <div class="small-cart-product-item d-flex align-items-center">
+                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
+                      <a href="#">
+                        <img src="img/toys/toy-01.png" alt="Product-01" />
+                      </a>
+                    </figure>
+                    <div class="small-cart-product-detail w-60">
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
+                      <p class="small-cart-product-price">1,279.00 RSD</p>
+                      <span class="fa fa-close delete-product"></span>
+                    </div>
+                  </div>
+                  <div class="small-cart-product-item d-flex align-items-center">
+                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
+                      <a href="#">
+                        <img src="img/toys/toy-01.png" alt="Product-01" />
+                      </a>
+                    </figure>
+                    <div class="small-cart-product-detail w-60">
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
+                      <p class="small-cart-product-price">1,279.00 RSD</p>
+                      <span class="fa fa-close delete-product"></span>
+                    </div>
+                  </div>
+                  <div class="small-cart-product-item d-flex align-items-center">
+                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
+                      <a href="#">
+                        <img src="img/toys/toy-01.png" alt="Product-01" />
+                      </a>
+                    </figure>
+                    <div class="small-cart-product-detail w-60">
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
+                      <p class="small-cart-product-price">1,279.00 RSD</p>
+                      <span class="fa fa-close delete-product"></span>
+                    </div>
+                  </div>
+                  <div class="small-cart-product-item d-flex align-items-center">
+                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
+                      <a href="#">
+                        <img src="img/toys/toy-01.png" alt="Product-01" />
+                      </a>
+                    </figure>
+                    <div class="small-cart-product-detail w-60">
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
+                      <p class="small-cart-product-price">1,279.00 RSD</p>
+                      <span class="fa fa-close delete-product"></span>
+                    </div>
+                  </div>
+                  <div class="small-cart-product-item d-flex align-items-center">
+                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
+                      <a href="#">
+                        <img src="img/toys/toy-01.png" alt="Product-01" />
+                      </a>
+                    </figure>
+                    <div class="small-cart-product-detail w-60">
+                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
+                      <p class="small-cart-product-price">1,279.00 RSD</p>
+                      <span class="fa fa-close delete-product"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-cart-price mb-3 mb-xl-2">
+                  <div class="small-cart-product-cost d-flex justify-content-between">
+                    <p class="small-cart-price-spec">Cena artikla</p>
+                    <p class="small-cart-product-price">1,279.00 RSD</p>
+                  </div>
+                  <div class="small-cart-delivery-price d-flex justify-content-between">
+                    <p class="small-cart-price-spec">Dostava</p>
+                    <p class="small-cart-product-price">00.00 RSD</p>
+                  </div>
+                  <div class="small-cart-total-price d-flex justify-content-between">
+                    <p class="small-cart-total-product-price-spec">Ukupan iznos</p>
+                    <p class="small-cart-total-product-price text-primary">1,279.00 RSD</p>
+                  </div>
+                </div>
+                <div class="small-cart-action text-center">
+                  <a href="#" class="btn btn-light small-cart-action-btn-continue mb-3 mb-lg-0">Nastavi kupovinu</a>
+                  <a href="#" class="btn btn-tertiary small-cart-action-btn-order">Naruči</a>
+                </div>
+              </div>
+            </div>
+            <!-- Small cart end -->
+            <div class="dropdown">
+              <a class="user-action-icon dropdown-toggle" href="#" id="user-action" data-toggle="dropdown">
+                <img src="img/nav-action-img/img-04.png" alt="User icon" />
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="user-action">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-sign-in fa-2x text-tertiary mr-3"></span>
+                  <span>Login</span>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-user-circle fa-2x text-tertiary mr-3"></span>
+                  <span>Register</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <span class="fa fa-question-circle fa-2x text-tertiary mr-3"></span>
+                  <span>Forgotten password</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#main-menu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <!-- Main menu start -->
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Prodavnica
+                  <span class="fa fa-angle-down submenu-toggler submenu-toggler-level-1"></span>
+                  <span class="fa fa-angle-down submenu-toggler submenu-toggler-desktop-level-1"></span>
+                </a>
+                <!-- Submenu level 1 start -->
+                <ul class="submenu submenu-level-1">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 mr-4">
+                        <img src="img/nav-img/img-01.png" alt="Igračke" />
+                      </figure>
+                      <span>Igračke</span>
+                      <span class="fa fa-angle-double-right submenu-toggler submenu-toggler-level-2"></span>
+                      <span class="fa fa-angle-double-right submenu-toggler submenu-toggler-desktop-level-2"></span>
+                    </a>
+                    <!-- Submenu level 2 start -->
+                    <ul class="submenu submenu-level-2">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Za dečake</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Za devojčice</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Za bebe</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Edukativne igračke</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Trotineti i Skejtbordovi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Lego Kocke</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Kocke za decu</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Drvene igračke</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Muzičke igračke</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Plišane igračke</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Rođendanski program</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Novogodišnji paketići</a>
+                      </li>
+                    </ul>
+                    <!-- Submenu level 2 end -->
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 mr-4">
+                        <img src="img/nav-img/img-02.png" alt="Dvorište" />
+                      </figure>
+                      <span>Dvorište</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 mr-4">
+                        <img src="img/nav-img/img-03.png" alt="Plaža" />
+                      </figure>
+                      <span>Plaža</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                      <figure class="category-img-wrapper d-inline-block m-0 mr-4">
+                        <img src="img/nav-img/img-04.png" alt="Za školu" />
+                      </figure>
+                      <span>Za školu</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Submenu level 1 end -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Veleprodaja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Akcija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link new" href="#">Novo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Main menu end -->
+        </nav>
+        <!-- Navigaion end -->
+      </div>
+      <div class="overlay-header"></div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main class="main-content">
+      <!-- Registration form start -->
+      <section class="registration py-4 py-md-5">
+        <div class="container">
+          <h1 class="registration-title text-center mb-4">Registracija</h1>
+          <form action="" method="post" class="registration-form">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="form-group">
+                  <label for="name" class="required">Ime</label>
+                  <input type="text" name="name" id="name" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6"">
+                <div class="form-group">
+                  <label for="lastname" class="required">Prezime</label>
+                  <input type="text" name="lastname" id="lastname" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6"">
+                <div class="form-group">
+                  <label for="street">Ulica</label>
+                  <input type="text" name="street" id="street" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-xm-6">
+                <div class="form-group">
+                  <label for="street-number">Broj</label>
+                  <input type="text" name="street-number" id="street-number" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-xm-6 col-sm-4">
+                <div class="form-group">
+                  <label for="postal-code">Postanski br.</label>
+                  <input type="text" name="postal-code" id="postal-code" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-xm-6 col-sm-4">
+                <div class="form-group">
+                  <label for="building-entrance">Ulaz</label>
+                  <input type="text" name="building-entrance" id="building-entrance" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-xm-6  col-sm-4">
+                <div class="form-group">
+                  <label for="building-floor">Sprat</label>
+                  <input type="text" name="building-floor" id="building-floor" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="form-group">
+                  <label for="phone">Telefon</label>
+                  <input type="text" name="phone" id="phone" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12 col-sm-8">
+                <div class="form-group">
+                  <label for="email" class="required">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="password" class="required">Lozinka</label>
+                  <input type="password" name="password" id="password" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <img src="img/registration-img/recaptcha.png" alt="Recapcha img">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group" class="required">
+                  <label for="repassword">Ponovi lozinku</label>
+                  <input type="repassword" name="repassword" id="repassword" class="form-control" value="">
+                </div>
+              </div>
+              <p class="recapcha-text text-tertiary">
+                Molimo Vas štiklirajte opciju nisam robot, koju koristimo radi zaštite od spama.
+              </p>
+              <div class="terms">
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" name="terms[]" value="notifications" />
+                    Želim da primam obaveštenja o akcijama i uslugama
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" name="terms[]" value="accept-terms" />
+                    Upoznat/a sam sa uslovima kupovine Magična Oaza Internet prodavnice i prihvatam ih.*
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" name="terms[]" value="state" />
+                    Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti razumeo/razumela,
+                    izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
+                    <span class="fake-checkbox"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-tertiary theme-btn" type="submit">Potvrdi</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section><!-- Registration form end -->
+    </main><!-- Main end -->
+            
+    <!-- Main footer start -->
+    <!-- <footer class="main-footer">
+      <div class="main-footer-content pb-5 text-center text-lg-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-4 col-lg-2 col-xl-3 mb-4">
+              <nav class="footer-navbar">
+                <ul class="footer-navbar-nav list-unstyled">
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Igračke</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Dvorište</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Plaža</a>
+                  </li>
+                  <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Za školu</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 mb-4">
+              <ul class="footer-info list-unstyled">
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">O nama</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Uslovi kupovine</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Načini plaćanja</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Zaštita podataka</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Klub Magzijevih drugara</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 mb-4">
+              <ul class="list-unstyled">
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Prodavnice</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Kako poručiti</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Reklamacije</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Prava potrošača</a>
+                </li>
+                <li class="footer-info-item">
+                  <a href="#" class="footer-info-link">Sve kategorije</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-xm-9 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto text-center text-lg-left mb-3">
+              <div class="social">
+                <a href="http://facebook.com" target="_blank" class="social-links">
+                  <span class="fa fa-facebook"></span>
+                </a>
+                <a href="http://twitter.com" target="_blank" class="social-links">
+                  <span class="fa fa-twitter"></span>
+                </a>
+                <a href="http://instagram.com" target="_blank" class="social-links">
+                  <span class="fa fa-instagram"></span>
+                </a>
+              </div>
+              <div class="newsletter">
+                <form action="" method="POST" class="newsletter-form">
+                  <div class="form-group mb-4">
+                    <label for="newsletter" class="text-uppercase">Newsletter</label>
+                    <input type="email" name="newsletter" id="newsletter" class="form-control"
+                      placeholder="Unesite Email adresu">
+                  </div>
+                  <button type="submit" class="btn btn-light theme-btn">Prijavi se</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer-copyrights text-center mx-auto">
+        <div class="container">
+          <a class="footer-brand mb-3" href="index.html">
+            <img src="img/logo.png" alt="Magicna oaza logo" />
+          </a>
+          <p class="copyrights">Copyright &copy; 2015 - 2019 Magična Oaza</p>
+        </div>
+      </div>
+    </footer> -->
+
+    <!--SCRIPTS goes here-->
+    <!--First jquery, then popper and finaly bootstrap-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--All page js-->
+    <script src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/lib/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
