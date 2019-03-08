@@ -1,28 +1,134 @@
 $text-main-color: $gray-700;
+$text-color-gray-200: $gray-200;
 $text-color-gray-400: $gray-400;
 $text-color-secondary: $secondary;
 $text-color-tertiary: $tertiary;
 
 .main-content {
   .registration {
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
     .registration-title {
       font-size: 2.5rem;
     }
-    label {
-      color: $text-color-gray-400;
-      margin-bottom: 17px;
+    .registration-form {
+      label {
+        color: $text-color-gray-400;
+        margin-bottom: 17px;
+      }
+      label.required {
+        color: $text-color-secondary;
+      }
+      .form-control {
+        height: calc(2em + 1.1rem + 3px);
+        padding: 0.9rem 1.84rem;
+        font-size: 1.125rem;
+        background-color: transparent;
+      }
+      .terms {
+        label {
+          color: $text-color-gray-200;
+          font-family: $gotham-rounded-bold;
+          text-transform: none;
+          letter-spacing: 0;
+          margin-bottom: 1rem;
+          margin-left: 47px;
+          padding-top: 4px;
+          position: relative;
+
+          input[type='checkbox'] {
+            width: 0px;
+            visibility: hidden;
+            display: none;
+            overflow: hidden;
+            border: 0;
+            padding: 0;
+          }
+          .fake-checkbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 29px;
+            height: 29px;
+            border-radius: 5px;
+            border: 2px solid $text-color-gray-400;
+            position: absolute;
+            left: -48px;
+            top: 0;
+            .fa-check {
+              display: none;
+              color: $text-color-secondary;
+              font-size: 1.1rem;
+            }
+          }
+
+          input[type='checkbox']:checked ~ .fake-checkbox {
+            border-color: $text-color-secondary;
+            .fa-check {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .theme-btn {
+        padding: 0.72rem 4.9rem;
+      }
     }
-    label.required {
-      color: $text-color-secondary;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    .registration {
+      padding-bottom: 200px;
     }
-    .form-control {
-      height: calc(2em + 1.1rem + 3px);
-      padding: 0.9rem 1.84rem;
-      font-size: 1.125rem;
-      background-color: transparent;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    .registration {
+      padding-bottom: 250px;
     }
-    .theme-btn {
-      padding: 0.72rem 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    .registration {
+      padding-bottom: 300px;
+      .registration-title {
+        font-size: 3rem;
+      }
+      .registration-form {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    .registration {
+      padding-bottom: 350px;
+      .registration-title {
+        font-size: 3.75rem;
+      }
+      .registration-form {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-content {
+    .registration {
+      padding-bottom: 450px;
     }
   }
 }

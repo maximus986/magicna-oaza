@@ -317,11 +317,11 @@
     <!-- Main start -->
     <main class="main-content">
       <!-- Registration form start -->
-      <section class="registration py-4 py-md-5">
+      <section class="registration pt-4 pt-md-6" style="background-image: url(img/registration-img/img-01.png)">
         <div class="container">
-          <h1 class="registration-title text-center mb-4">Registracija</h1>
+          <h1 class="registration-title text-center mb-4 mb-sm-5">Registracija</h1>
           <form action="" method="post" class="registration-form">
-            <div class="row">
+            <div class="row align-items-sm-end">
               <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="name" class="required">Ime</label>
@@ -334,95 +334,113 @@
                   <input type="text" name="lastname" id="lastname" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-sm-6"">
+              <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="street">Ulica</label>
                   <input type="text" name="street" id="street" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-xm-6">
+              <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="street-number">Broj</label>
                   <input type="text" name="street-number" id="street-number" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-xm-6 col-sm-4">
+              <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="postal-code">Postanski br.</label>
                   <input type="text" name="postal-code" id="postal-code" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-xm-6 col-sm-4">
+              <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="building-entrance">Ulaz</label>
                   <input type="text" name="building-entrance" id="building-entrance" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-xm-6  col-sm-4">
+              <div class="col-6 col-sm-4 col-md-3">
                 <div class="form-group">
                   <label for="building-floor">Sprat</label>
                   <input type="text" name="building-floor" id="building-floor" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-sm-4">
+              <div class="col-6 col-sm-4 col-md-3">
+                <div class="form-group">
+                  <label for="flat">Stan</label>
+                  <input type="text" name="flat" id="flat" class="form-control" value="">
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3">
                 <div class="form-group">
                   <label for="phone">Telefon</label>
                   <input type="text" name="phone" id="phone" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12 col-sm-8">
+              <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="email" class="required">Email</label>
                   <input type="email" name="email" id="email" class="form-control" value="">
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="password" class="required">Lozinka</label>
                   <input type="password" name="password" id="password" class="form-control" value="">
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <img src="img/registration-img/recaptcha.png" alt="Recapcha img">
                 </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group" class="required">
-                  <label for="repassword">Ponovi lozinku</label>
-                  <input type="repassword" name="repassword" id="repassword" class="form-control" value="">
+                <div class="col-12 col-sm-6 order-2 mb-3 mb-sm-4 order-sm-1">
+                  <div class="form-group text-center text-sm-left">
+                    <img src="img/registration-img/recaptcha.png" alt="Recapcha img">
+                  </div>
                 </div>
-              </div>
-              <p class="recapcha-text text-tertiary">
-                Molimo Vas štiklirajte opciju nisam robot, koju koristimo radi zaštite od spama.
-              </p>
-              <div class="terms">
-                <div class="form-group">
-                  <label>
-                    <input type="checkbox" name="terms[]" value="notifications" />
-                    Želim da primam obaveštenja o akcijama i uslugama
-                    <span class="fake-checkbox"></span>
-                  </label>
+                <div class="col-12 col-sm-6 mb-sm-4 order-sm-2">
+                  <div class="form-group">
+                    <label for="repassword" class="required">Ponovi lozinku</label>
+                    <input type="password" name="repassword" id="repassword" class="form-control" value="">
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label>
-                    <input type="checkbox" name="terms[]" value="accept-terms" />
-                    Upoznat/a sam sa uslovima kupovine Magična Oaza Internet prodavnice i prihvatam ih.*
-                    <span class="fake-checkbox"></span>
-                  </label>
+                <div class="col-12 order-3 mb-3 mb-sm-4">
+                  <p class="recapcha-text text-tertiary">
+                    Molimo Vas štiklirajte opciju nisam robot, koju koristimo radi zaštite od spama.
+                  </p>
                 </div>
-                <div class="form-group">
-                  <label>
-                    <input type="checkbox" name="terms[]" value="state" />
-                    Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti razumeo/razumela,
-                    izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
-                    <span class="fake-checkbox"></span>
-                  </label>
+                <div class="col-12 order-3 mb-3 mb-sm-5">
+                  <div class="terms">
+                    <div class="form-group">
+                      <label>
+                        <input type="checkbox" name="terms[]" value="notifications" />
+                        Želim da primam obaveštenja o akcijama i uslugama
+                        <span class="fake-checkbox">
+                          <span class="fa fa-check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        <input type="checkbox" name="terms[]" value="accept-terms" />
+                        Upoznat/a sam sa uslovima kupovine Magična Oaza Internet prodavnice i prihvatam ih.*
+                        <span class="fake-checkbox">
+                          <span class="fa fa-check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        <input type="checkbox" name="terms[]" value="state" />
+                        Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti razumeo/razumela,
+                        izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
+                        <span class="fake-checkbox">
+                          <span class="fa fa-check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group text-center">
-                <button class="btn btn-tertiary theme-btn" type="submit">Potvrdi</button>
-              </div>
+                <div class="col-12 order-3">
+                  <div class="form-group text-center">
+                    <button class="btn btn-tertiary theme-btn" type="submit">Potvrdi</button>
+                  </div>
+                </div>
             </div>
           </form>
         </div>
@@ -430,7 +448,7 @@
     </main><!-- Main end -->
             
     <!-- Main footer start -->
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
       <div class="main-footer-content pb-5 text-center text-lg-left">
         <div class="container">
           <div class="row">
@@ -524,7 +542,7 @@
           <p class="copyrights">Copyright &copy; 2015 - 2019 Magična Oaza</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--SCRIPTS goes here-->
     <!--First jquery, then popper and finaly bootstrap-->
