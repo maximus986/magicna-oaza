@@ -63,6 +63,7 @@ $text-white: $white;
     color: $text-main-color;
     &-link {
       color: inherit;
+      -webkit-transition: 0.2s linear;
       transition: 0.2s linear;
       &:hover {
         color: $text-color-primary;
@@ -100,7 +101,7 @@ $text-white: $white;
       }
     }
   }
-  
+
   .all-ages-products-slider {
     .all-ages-products-link {
       display: block;

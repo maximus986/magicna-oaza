@@ -18,6 +18,7 @@ $text-color-primary: $primary;
     .footer-nav-link,
     .footer-info-link {
       color: inherit;
+      -webkit-transition: 0.3s linear;
       transition: 0.3s linear;
       &:hover {
         color: rgba($text-main-color, 0.44) !important;
