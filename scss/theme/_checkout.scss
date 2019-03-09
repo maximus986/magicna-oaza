@@ -6,6 +6,7 @@ $text-color-tertiary: $tertiary;
 
 .main-content {
   .main-form-section.checkout {
+    padding-bottom: 100px;
     .small-cart-content {
       position: static;
       max-width: auto;
@@ -13,7 +14,86 @@ $text-color-tertiary: $tertiary;
       height: auto;
       top: auto;
       right: auto;
-      background: $bg-white;
+
+      .small-cart-products {
+        height: 60vh;
+
+        .small-cart-product-detail {
+          font-family: $gotham-rounded-book;
+          .small-cart-product-title {
+            a {
+              color: $text-color-gray-200;
+              cursor: pointer;
+              transition: 0.3s linear;
+              &:hover {
+                color: darken($text-color-gray-200, 15%);
+              }
+            }
+          }
+          .small-cart-product-price {
+            color: $text-color-gray-200;
+          }
+        }
+
+        .delete-product {
+          display: none;
+        }
+      }
+      .small-cart-price {
+        font-size: 1.1rem;
+        color: $text-color-gray-200;
+        font-family: $gotham-rounded-bold;
+        .small-cart-product-price {
+          color: $text-color-gray-200;
+        }
+        .small-cart-total-price {
+          font-size: 1.3rem;
+          color: $text-color-gray-200 !important;
+          .small-cart-total-product-price {
+            color: $text-color-gray-200 !important;
+          }
+        }
+      }
+      .small-cart-action {
+        position: static;
+        left: auto;
+        transform: translateX(0);
+        bottom: auto;
+        .small-cart-action-btn-order {
+          font-size: 1.2rem;
+          color: $text-white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    .main-form-section.checkout {
+      .small-cart-content {
+        .small-cart-price {
+          font-size: 1rem;
+          .small-cart-total-price {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    .main-form-section.checkout {
+      .small-cart-content {
+        .small-cart-price {
+          font-size: 1.1rem;
+          .small-cart-total-price {
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
 }
@@ -25,6 +105,28 @@ $text-color-tertiary: $tertiary;
         width: 100%;
         margin: 0 auto;
       }
+      .small-cart-content {
+        padding: 30px 15px;
+
+        .small-cart-products {
+          height: 90vh;
+        }
+        .small-cart-product-img {
+          width: 30% !important;
+        }
+        .small-cart-product-detail {
+          width: 70% !important;
+        }
+
+        .small-cart-action {
+          display: block;
+          text-align: left;
+          .small-cart-action-btn-order {
+            font-size: 1.25rem;
+            padding: 0.76rem 5.67rem;
+          }
+        }
+      }
     }
   }
 }
@@ -32,9 +134,45 @@ $text-color-tertiary: $tertiary;
 @media (min-width: 1200px) {
   .main-content {
     .main-form-section.checkout {
-      .main-form {
-        width: 100%;
-        margin: 0 auto;
+      padding-bottom: 150px;
+      .small-cart-content {
+        .small-cart-products {
+          height: 90vh;
+          .small-cart-product-detail {
+            .small-cart-product-title {
+              font-size: 1.5rem;
+              max-height: 3.6rem;
+            }
+            .small-cart-product-price {
+              font-size: 1.125rem;
+            }
+          }
+        }
+        .small-cart-price {
+          font-size: 1.5rem;
+          .small-cart-total-price {
+            font-size: 1.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-content {
+    .main-form-section.checkout {
+      padding-bottom: 200px;
+      .small-cart-content {
+        .small-cart-products {
+          height: 70vh;
+        }
+        .small-cart-price {
+          font-size: 1.5rem;
+          .small-cart-total-price {
+            font-size: 1.875rem;
+          }
+        }
       }
     }
   }
