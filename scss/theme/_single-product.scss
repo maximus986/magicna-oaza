@@ -126,6 +126,9 @@ $bg-color-tertiary: $tertiary;
       }
     }
   }
+  label {
+    color: $text-main-color;
+  }
 }
 
 @media (min-width: 768px) {

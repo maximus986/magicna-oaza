@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center right 0.5625rem;
   -webkit-background-size: 1.125rem 1.125rem;
-          background-size: 1.125rem 1.125rem;
+  background-size: 1.125rem 1.125rem;
 }
 
 .has-success .form-control-feedback,
@@ -17,7 +17,7 @@
 }
 
 .has-success .form-control {
-  border-color: #5cb85c;
+  border-color: #5cb85c !important;
 }
 
 .has-success .input-group-addon {
@@ -74,8 +74,6 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
 }
 
-.error-msg > *{
-    color:#d9534f;
+.error-msg > * {
+  color: #d9534f;
 }
-
-

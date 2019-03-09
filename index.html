@@ -1454,11 +1454,12 @@
                 </a>
               </div>
               <div class="newsletter">
-                <form action="" method="POST" class="newsletter-form">
+                <form action="" method="GET" class="newsletter-form">
                   <div class="form-group mb-4">
                     <label for="newsletter" class="text-uppercase">Newsletter</label>
                     <input type="email" name="newsletter" id="newsletter" class="form-control"
                       placeholder="Unesite Email adresu">
+                      <div class="error-msg"></div>
                   </div>
                   <button type="submit" class="btn btn-light theme-btn">Prijavi se</button>
                 </form>
@@ -1487,6 +1488,7 @@
     <script src="js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/lib/owl.carousel.min.js"></script>
     <script src="js/lib/select2.min.js"></script>
+    <script src="js/lib/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

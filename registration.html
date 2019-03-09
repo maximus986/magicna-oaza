@@ -320,72 +320,83 @@
       <section class="main-form-section pt-4 pt-md-6" style="background-image: url(img/main-form-img/img-01.png)">
         <div class="container">
           <h1 class="main-form-section-title text-center mb-4 mb-sm-5">Registracija</h1>
-          <form action="" method="post" class="main-form">
-            <div class="row align-items-sm-end">
+          <form action="" method="get" class="main-form">
+            <div class="row align-items-sm-end align-items-lg-start">
               <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="name" class="required">Ime</label>
                   <input type="text" name="name" id="name" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
-              <div class="col-12 col-sm-6"">
+              <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="lastname" class="required">Prezime</label>
                   <input type="text" name="lastname" id="lastname" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="street">Ulica</label>
                   <input type="text" name="street" id="street" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="street-number">Broj</label>
                   <input type="text" name="street-number" id="street-number" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="postal-code">Postanski br.</label>
                   <input type="text" name="postal-code" id="postal-code" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="form-group">
                   <label for="building-entrance">Ulaz</label>
                   <input type="text" name="building-entrance" id="building-entrance" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-sm-4 col-md-3">
                 <div class="form-group">
                   <label for="building-floor">Sprat</label>
                   <input type="text" name="building-floor" id="building-floor" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-sm-4 col-md-3">
                 <div class="form-group">
                   <label for="flat">Stan</label>
                   <input type="text" name="flat" id="flat" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-6 col-sm-4 col-md-3">
                 <div class="form-group">
                   <label for="phone">Telefon</label>
                   <input type="text" name="phone" id="phone" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="email" class="required">Email</label>
                   <input type="email" name="email" id="email" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
               </div>
               <div class="col-12 col-sm-6">
                 <div class="form-group">
                   <label for="password" class="required">Lozinka</label>
                   <input type="password" name="password" id="password" class="form-control" value="">
+                  <div class="error-msg"></div>
                 </div>
                 </div>
                 <div class="col-12 col-sm-6 order-2 mb-3 mb-sm-4 order-sm-1">
@@ -397,6 +408,7 @@
                   <div class="form-group">
                     <label for="repassword" class="required">Ponovi lozinku</label>
                     <input type="password" name="repassword" id="repassword" class="form-control" value="">
+                    <div class="error-msg"></div>
                   </div>
                 </div>
                 <div class="col-12 order-3 mb-3 mb-sm-4">
@@ -408,7 +420,7 @@
                   <div class="terms">
                     <div class="form-group">
                       <label>
-                        <input type="checkbox" name="terms[]" value="notifications" />
+                        <input type="checkbox" name="terms" value="notifications" checked="checked"/>
                         Želim da primam obaveštenja o akcijama i uslugama
                         <span class="fake-checkbox">
                           <span class="fa fa-check"></span>
@@ -417,7 +429,7 @@
                     </div>
                     <div class="form-group">
                       <label>
-                        <input type="checkbox" name="terms[]" value="accept-terms" />
+                        <input type="checkbox" name="terms" value="accept-terms" checked="checked"/>
                         Upoznat/a sam sa uslovima kupovine Magična Oaza Internet prodavnice i prihvatam ih.*
                         <span class="fake-checkbox">
                           <span class="fa fa-check"></span>
@@ -426,7 +438,7 @@
                     </div>
                     <div class="form-group">
                       <label>
-                        <input type="checkbox" name="terms[]" value="state" />
+                        <input type="checkbox" name="terms" value="state" checked="checked"/>
                         Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti razumeo/razumela,
                         izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
                         <span class="fake-checkbox">
@@ -434,11 +446,12 @@
                         </span>
                       </label>
                     </div>
+                    <div class="error-msg"></div>
                   </div>
                 </div>
                 <div class="col-12 order-3">
                   <div class="form-group text-center">
-                    <button class="btn btn-tertiary theme-btn" type="submit">Potvrdi</button>
+                    <button class="btn btn-tertiary theme-btn" type="submit" name="send" value="yes">Potvrdi</button>
                   </div>
                 </div>
             </div>
@@ -526,6 +539,7 @@
                     <label for="newsletter" class="text-uppercase">Newsletter</label>
                     <input type="email" name="newsletter" id="newsletter" class="form-control"
                       placeholder="Unesite Email adresu">
+                      <div class="error-msg"></div>
                   </div>
                   <button type="submit" class="btn btn-light theme-btn">Prijavi se</button>
                 </form>

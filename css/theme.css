@@ -4,6 +4,9 @@ html {
 body {
   font-family: "GothamRounded-Book"; }
 
+body *:focus {
+  outline: none; }
+
 h1,
 h2 {
   font-family: "BurbankSmall-Bold"; }
@@ -238,7 +241,7 @@ img {
   color: #5cb85c; }
 
 .has-success .form-control {
-  border-color: #5cb85c; }
+  border-color: #5cb85c !important; }
 
 .has-success .input-group-addon {
   color: #5cb85c;
@@ -2333,6 +2336,8 @@ img {
     .main-content .single-product-additional-info .single-product-content-description .single-product-material,
     .main-content .single-product-additional-info .single-product-content-description .single-product-dimensions {
       font-family: "GothamRounded-Bold"; }
+.main-content label {
+  color: #494949; }
 
 @media (min-width: 768px) {
   .main-content .single-product-additional-info {
@@ -2621,7 +2626,8 @@ img {
       padding: 0.9rem 1.5rem;
       background-color: transparent;
       border-color: #494949;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-family: "GothamRounded-Book"; }
     .main-footer-content .newsletter .newsletter-form .theme-btn {
       padding: 0.8rem 3rem;
       color: #494949;

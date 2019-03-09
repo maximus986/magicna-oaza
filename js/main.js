@@ -315,37 +315,49 @@ $(document).ready(function() {
   }
 
   //Phone numbers
-  phoneImg.click(function() {
-    $(this).toggleClass('mr-3');
-    phoneNumbers.toggleClass('active');
-  });
+  if (phoneImg.length > 0) {
+    phoneImg.click(function() {
+      $(this).toggleClass('mr-3');
+      phoneNumbers.toggleClass('active');
+    });
+  }
 
   //Select elements
   //Gender
-  selectGender.select2({
-    minimumResultsForSearch: -1,
-    width: '100%'
-  });
+  if (selectGender.length > 0) {
+    selectGender.select2({
+      minimumResultsForSearch: -1,
+      width: '100%'
+    });
+  }
   //Category
-  selectCategory.select2({
-    minimumResultsForSearch: -1,
-    width: '100%'
-  });
+  if (selectCategory.length > 0) {
+    selectCategory.select2({
+      minimumResultsForSearch: -1,
+      width: '100%'
+    });
+  }
   //Brand
-  selectBrand.select2({
-    minimumResultsForSearch: -1,
-    width: '100%'
-  });
+  if (selectBrand.length > 0) {
+    selectBrand.select2({
+      minimumResultsForSearch: -1,
+      width: '100%'
+    });
+  }
   //Age
-  selectAge.select2({
-    minimumResultsForSearch: -1,
-    width: '100%'
-  });
+  if (selectAge.length > 0) {
+    selectAge.select2({
+      minimumResultsForSearch: -1,
+      width: '100%'
+    });
+  }
   //Sort
-  selectSort.select2({
-    minimumResultsForSearch: -1,
-    width: '100%'
-  });
+  if (selectSort.length > 0) {
+    selectSort.select2({
+      minimumResultsForSearch: -1,
+      width: '100%'
+    });
+  }
 
   // Replace built-in arrow with fa icon
   $('b[role="presentation"]').hide();
@@ -378,14 +390,126 @@ $(document).ready(function() {
     }
   }
 
-  // // EASE SCROLL
-
-  // $(document).on('click', 'a[href^="#"]', function (event) {
-  //     event.preventDefault();
-  //     $('html, body').animate({
-  //         scrollTop: $($.attr(this, 'href')).offset().top
-  //     }, 800);
-  // });
+  //Main form validation
+  $(function() {
+    $('.main-form').validate({
+      highlight: function(element) {
+        $(element)
+          .closest('.form-group')
+          .addClass('has-danger');
+        $(element).addClass('form-control-danger');
+      },
+      unhighlight: function(element) {
+        $(element)
+          .closest('.form-group')
+          .removeClass('has-danger')
+          .addClass('has-success');
+        $(element)
+          .removeClass('form-control-danger')
+          .addClass('form-control-success');
+      },
+      rules: {
+        name: {
+          required: true,
+          rangelength: [2, 20]
+        },
+        lastname: {
+          required: true,
+          rangelength: [2, 20]
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        password: {
+          required: true,
+          minlength: 6
+        },
+        repassword: {
+          required: true,
+          minlength: 6,
+          equalTo: '#password'
+        },
+        terms: {
+          required: true
+        }
+      },
+      messages: {
+        name: {
+          required: 'Polje Ime je obavezno',
+          rangelength: 'Ime mora biti izmedju 2 i 20 karaktera'
+        },
+        lastname: {
+          required: 'Polje Ime je obavezno',
+          rangelength: 'Prezime mora biti izmedju 2 i 20 karaktera'
+        },
+        email: {
+          required: 'Polje Email je obavezno',
+          email: 'Molimo unesite validan Email'
+        },
+        password: {
+          required: 'Polje Lozinka je obavezno',
+          minlength: 'Polje mora minimalno imati 6 karaktera'
+        },
+        repassword: {
+          required: 'Polje Lozinka je obavezno',
+          minlength: 'Polje Ponovi lozinku mora minimalno imati 6 karaktera',
+          equalTo: 'Lozinke se ne poklapaju'
+        },
+        terms: {
+          required: 'Polje je obavezno'
+        }
+      },
+      errorElement: 'p',
+      errorPlacement: function(error, element) {
+        error.appendTo(
+          $(element)
+            .closest('.form-group')
+            .find('.error-msg')
+        );
+      }
+    });
+  });
+  //Newsletter form validation
+  $(function() {
+    $('.newsletter-form').validate({
+      highlight: function(element) {
+        $(element)
+          .closest('.form-group')
+          .addClass('has-danger');
+        $(element).addClass('form-control-danger');
+      },
+      unhighlight: function(element) {
+        $(element)
+          .closest('.form-group')
+          .removeClass('has-danger')
+          .addClass('has-success');
+        $(element)
+          .removeClass('form-control-danger')
+          .addClass('form-control-success');
+      },
+      rules: {
+        newsletter: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        newsletter: {
+          required: 'Polje Email je obavezno',
+          email: 'Molimo unesite validan Email'
+        }
+      },
+      errorElement: 'p',
+      errorPlacement: function(error, element) {
+        error.appendTo(
+          $(element)
+            .closest('.form-group')
+            .find('.error-msg')
+        );
+      }
+    });
+  });
 
   // //ANIMATION
 
