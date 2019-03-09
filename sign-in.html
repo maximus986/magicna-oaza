@@ -316,217 +316,35 @@
 
     <!-- Main start -->
     <main class="main-content">
-      <!-- Main form checkout start -->
-      <section class="main-form-section checkout pt-4 pt-md-6" style="background-image: url(img/main-form-img/img-01.png)">
+      <!-- Main form sign-in start -->
+      <section class="main-form-section sign-in pt-4 pt-md-6" style="background-image: url(img/sign-in-img/img-02.png)">
         <div class="container">
-          <h1 class="main-form-section-title text-center text-sm-left mb-4 mb-sm-5">Checkout</h1>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-xl-7">
-              <form action="" method="post" class="main-form">
-                <div class="row align-items-xl-end">
-                  <div class="col-12 col-md-6">
-                    <div class="form-group">
-                      <label for="name" class="required">Ime</label>
-                      <input type="text" name="name" id="name" class="form-control" value="">
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class=" form-group">
-                      <label for="lastname" class="required">Prezime</label>
-                      <input type="text" name="lastname" id="lastname" class="form-control" value="">
-                  </div>
+          <h1 class="main-form-section-title text-center mb-4 mb-sm-5">Prijavite se</h1>
+          <form action="" method="post" class="main-form">
+            <div class="row align-items-sm-end">
+              <div class="col-12 col-xm-10 col-sm-6 col-md-5 col-lg-6 col-xxl-5 mx-auto">
+                <div class="form-group">
+                  <label for="email" class="required">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" value="">
                 </div>
-                <div class="col-12 col-xl-6">
-                  <div class="form-group">
-                    <label for="street">Ulica</label>
-                    <input type="text" name="street" id="street" class="form-control" value="">
-                  </div>
+                <div class="form-group mb-5">
+                  <label for="password" class="required">Lozinka</label>
+                  <input type="password" name="password" id="password" class="form-control" value="">
                 </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="street-number">Broj</label>
-                    <input type="text" name="street-number" id="street-number" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="postal-code">Postanski br.</label>
-                    <input type="text" name="postal-code" id="postal-code" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="building-entrance">Ulaz</label>
-                    <input type="text" name="building-entrance" id="building-entrance" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="building-floor">Sprat</label>
-                    <input type="text" name="building-floor" id="building-floor" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="flat">Stan</label>
-                    <input type="text" name="flat" id="flat" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="text" name="phone" id="phone" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-12 col-xl-6">
-                  <div class="form-group">
-                    <label for="email" class="required">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="form-group">
-                    <label for="password" class="required">Lozinka</label>
-                    <input type="password" name="password" id="password" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-12 col-xl-6 order-2 mb-3 mb-sm-4 mb-lg-4 order-xl-1">
-                  <div class="form-group text-center text-sm-left">
-                    <img src="img/main-form-img/recaptcha.png" alt="Recapcha img">
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 mb-sm-4 mb-md-0 mb-xl-4 order-xl-2">
-                  <div class="form-group">
-                    <label for="repassword" class="required">Ponovi lozinku</label>
-                    <input type="password" name="repassword" id="repassword" class="form-control" value="">
-                  </div>
-                </div>
-                <div class="col-12 order-3 mb-3 mb-sm-4">
-                  <p class="recapcha-text text-tertiary">
-                    Molimo Vas štiklirajte opciju nisam robot, koju koristimo radi zaštite od spama.
-                  </p>
-                </div>
-                <div class="col-12 order-3 mb-3 mb-sm-5">
-                  <div class="terms">
-                    <div class="form-group">
-                      <label>
-                        <input type="checkbox" name="terms[]" value="notifications" />
-                        Želim da primam obaveštenja o akcijama i uslugama
-                        <span class="fake-checkbox">
-                          <span class="fa fa-check"></span>
-                        </span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label>
-                        <input type="checkbox" name="terms[]" value="accept-terms" />
-                        Upoznat/a sam sa uslovima kupovine Magična Oaza Internet prodavnice i prihvatam ih.*
-                        <span class="fake-checkbox">
-                          <span class="fa fa-check"></span>
-                        </span>
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label>
-                        <input type="checkbox" name="terms[]" value="state" />
-                        Nakon što sam se upoznao/upoznala sa navedenim obaveštenjem i isto u potpunosti razumeo/razumela,
-                        izjavljujem da dajem pristanak za navedenu obradu podataka o ličnosti
-                        <span class="fake-checkbox">
-                          <span class="fa fa-check"></span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-12 col-sm-6 col-xl-5">
-              <div class="small-cart-content">
-                <div class="small-cart-products mb-3 mb-xl-2">
-                  <div class="small-cart-product-item d-flex align-items-center">
-                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
-                      <a href="#">
-                        <img src="img/toys/toy-01.png" alt="Product-01" />
-                      </a>
-                    </figure>
-                    <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
-                      <p class="small-cart-product-price">1,279.00 RSD</p>
-                      <span class="fa fa-close delete-product"></span>
-                    </div>
-                  </div>
-                  <div class="small-cart-product-item d-flex align-items-center">
-                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
-                      <a href="#">
-                        <img src="img/toys/toy-01.png" alt="Product-01" />
-                      </a>
-                    </figure>
-                    <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
-                      <p class="small-cart-product-price">1,279.00 RSD</p>
-                      <span class="fa fa-close delete-product"></span>
-                    </div>
-                  </div>
-                  <div class="small-cart-product-item d-flex align-items-center">
-                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
-                      <a href="#">
-                        <img src="img/toys/toy-01.png" alt="Product-01" />
-                      </a>
-                    </figure>
-                    <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
-                      <p class="small-cart-product-price">1,279.00 RSD</p>
-                      <span class="fa fa-close delete-product"></span>
-                    </div>
-                  </div>
-                  <div class="small-cart-product-item d-flex align-items-center">
-                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
-                      <a href="#">
-                        <img src="img/toys/toy-01.png" alt="Product-01" />
-                      </a>
-                    </figure>
-                    <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
-                      <p class="small-cart-product-price">1,279.00 RSD</p>
-                      <span class="fa fa-close delete-product"></span>
-                    </div>
-                  </div>
-                  <div class="small-cart-product-item d-flex align-items-center">
-                    <figure class="small-cart-product-img w-40 mr-2 mr-lg-5 mr-xl-4">
-                      <a href="#">
-                        <img src="img/toys/toy-01.png" alt="Product-01" />
-                      </a>
-                    </figure>
-                    <div class="small-cart-product-detail w-60">
-                      <h5 class="small-cart-product-title mb-3"><a href="#">Mali Genije Edukativni Set</a></h5>
-                      <p class="small-cart-product-price">1,279.00 RSD</p>
-                      <span class="fa fa-close delete-product"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="small-cart-price mb-3 mb-xl-2">
-                  <div class="small-cart-product-cost d-flex justify-content-between">
-                    <p class="small-cart-price-spec">Cena artikla</p>
-                    <p class="small-cart-product-price">1,279.00 RSD</p>
-                  </div>
-                  <div class="small-cart-delivery-price d-flex justify-content-between">
-                    <p class="small-cart-price-spec">Dostava</p>
-                    <p class="small-cart-product-price">00.00 RSD</p>
-                  </div>
-                  <div class="small-cart-total-price d-flex justify-content-between">
-                    <p class="small-cart-total-product-price-spec">Ukupan iznos</p>
-                    <p class="small-cart-total-product-price text-primary">1,279.00 RSD</p>
-                  </div>
-                </div>
-                <div class="small-cart-action">
-                  <a href="#" class="btn btn-tertiary small-cart-action-btn-order">Dalje</a>
+                <div class="form-group text-center">
+                  <button class="btn btn-tertiary theme-btn" type="submit">Potvrdi</button>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
+          <figure class="magzy-img-wrapper">
+            <img src="img/sign-in-img/img-03.png" class="magzy-img" alt="Magzy image">
+          </figure>
         </div>
-      </section><!-- Main form checkout end -->
+      </section><!-- Main form sign-in end -->
+      <!-- Magzy start -->
+      <section class="bg-beige" style="background-image: url(img/sign-in-img/img-01.png)">
+      </section><!-- Magzy end -->
     </main><!-- Main end -->
             
     <!-- Main footer start -->
