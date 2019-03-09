@@ -2373,24 +2373,24 @@ img {
       padding: 20px 10px; }
     .main-content .single-product-additional-info .warning {
       font-size: 0.8rem; } }
-.main-content .registration {
+.main-content .main-form-section {
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 150px; }
-  .main-content .registration .registration-title {
+  .main-content .main-form-section .main-form-section-title {
     font-size: 2.5rem; }
-  .main-content .registration .registration-form label {
+  .main-content .main-form-section .main-form label {
     color: #cfcfcf;
     margin-bottom: 17px; }
-  .main-content .registration .registration-form label.required {
+  .main-content .main-form-section .main-form label.required {
     color: #8759f2; }
-  .main-content .registration .registration-form .form-control {
+  .main-content .main-form-section .main-form .form-control {
     height: calc(2em + 1.1rem + 3px);
     padding: 0.9rem 1.84rem;
     font-size: 1.125rem;
     background-color: transparent; }
-  .main-content .registration .registration-form .terms label {
+  .main-content .main-form-section .main-form .terms label {
     color: #9b9b9b;
     font-family: "GothamRounded-Bold";
     text-transform: none;
@@ -2399,14 +2399,14 @@ img {
     margin-left: 47px;
     padding-top: 4px;
     position: relative; }
-    .main-content .registration .registration-form .terms label input[type='checkbox'] {
+    .main-content .main-form-section .main-form .terms label input[type='checkbox'] {
       width: 0px;
       visibility: hidden;
       display: none;
       overflow: hidden;
       border: 0;
       padding: 0; }
-    .main-content .registration .registration-form .terms label .fake-checkbox {
+    .main-content .main-form-section .main-form .terms label .fake-checkbox {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2417,42 +2417,59 @@ img {
       position: absolute;
       left: -48px;
       top: 0; }
-      .main-content .registration .registration-form .terms label .fake-checkbox .fa-check {
+      .main-content .main-form-section .main-form .terms label .fake-checkbox .fa-check {
         display: none;
         color: #8759f2;
         font-size: 1.1rem; }
-    .main-content .registration .registration-form .terms label input[type='checkbox']:checked ~ .fake-checkbox {
+    .main-content .main-form-section .main-form .terms label input[type='checkbox']:checked ~ .fake-checkbox {
       border-color: #8759f2; }
-      .main-content .registration .registration-form .terms label input[type='checkbox']:checked ~ .fake-checkbox .fa-check {
+      .main-content .main-form-section .main-form .terms label input[type='checkbox']:checked ~ .fake-checkbox .fa-check {
         display: inline-block; }
-  .main-content .registration .registration-form .theme-btn {
+  .main-content .main-form-section .main-form .theme-btn {
     padding: 0.72rem 4.9rem; }
 
 @media (min-width: 576px) {
-  .main-content .registration {
+  .main-content .main-form-section {
     padding-bottom: 200px; } }
 @media (min-width: 576px) {
-  .main-content .registration {
+  .main-content .main-form-section {
     padding-bottom: 250px; } }
 @media (min-width: 992px) {
-  .main-content .registration {
+  .main-content .main-form-section {
     padding-bottom: 300px; }
-    .main-content .registration .registration-title {
+    .main-content .main-form-section .main-form-section-title {
       font-size: 3rem; }
-    .main-content .registration .registration-form {
+    .main-content .main-form-section .main-form {
       width: 80%;
       margin: 0 auto; } }
 @media (min-width: 1200px) {
-  .main-content .registration {
+  .main-content .main-form-section {
     padding-bottom: 350px; }
-    .main-content .registration .registration-title {
+    .main-content .main-form-section .main-form-section-title {
       font-size: 3.75rem; }
-    .main-content .registration .registration-form {
+    .main-content .main-form-section .main-form {
       width: 70%;
       margin: 0 auto; } }
 @media (min-width: 1400px) {
-  .main-content .registration {
+  .main-content .main-form-section {
     padding-bottom: 450px; } }
+.main-content .main-form-section.checkout .small-cart-content {
+  position: static;
+  max-width: auto;
+  width: auto;
+  height: auto;
+  top: auto;
+  right: auto;
+  background: #fff; }
+
+@media (min-width: 992px) {
+  .main-content .main-form-section.checkout .main-form {
+    width: 100%;
+    margin: 0 auto; } }
+@media (min-width: 1200px) {
+  .main-content .main-form-section.checkout .main-form {
+    width: 100%;
+    margin: 0 auto; } }
 .main-footer {
   background: #ffe19c; }
   .main-footer-content {

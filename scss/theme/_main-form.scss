@@ -5,15 +5,15 @@ $text-color-secondary: $secondary;
 $text-color-tertiary: $tertiary;
 
 .main-content {
-  .registration {
+  .main-form-section {
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 150px;
-    .registration-title {
+    .main-form-section-title {
       font-size: 2.5rem;
     }
-    .registration-form {
+    .main-form {
       label {
         color: $text-color-gray-400;
         margin-bottom: 17px;
@@ -81,7 +81,7 @@ $text-color-tertiary: $tertiary;
 
 @media (min-width: 576px) {
   .main-content {
-    .registration {
+    .main-form-section {
       padding-bottom: 200px;
     }
   }
@@ -89,7 +89,7 @@ $text-color-tertiary: $tertiary;
 
 @media (min-width: 576px) {
   .main-content {
-    .registration {
+    .main-form-section {
       padding-bottom: 250px;
     }
   }
@@ -97,12 +97,12 @@ $text-color-tertiary: $tertiary;
 
 @media (min-width: 992px) {
   .main-content {
-    .registration {
+    .main-form-section {
       padding-bottom: 300px;
-      .registration-title {
+      .main-form-section-title {
         font-size: 3rem;
       }
-      .registration-form {
+      .main-form {
         width: 80%;
         margin: 0 auto;
       }
@@ -112,12 +112,12 @@ $text-color-tertiary: $tertiary;
 
 @media (min-width: 1200px) {
   .main-content {
-    .registration {
+    .main-form-section {
       padding-bottom: 350px;
-      .registration-title {
+      .main-form-section-title {
         font-size: 3.75rem;
       }
-      .registration-form {
+      .main-form {
         width: 70%;
         margin: 0 auto;
       }
@@ -127,7 +127,7 @@ $text-color-tertiary: $tertiary;
 
 @media (min-width: 1400px) {
   .main-content {
-    .registration {
+    .main-form-section {
       padding-bottom: 450px;
     }
   }

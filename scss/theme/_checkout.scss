@@ -1,0 +1,41 @@
+$text-main-color: $gray-700;
+$text-color-gray-200: $gray-200;
+$text-color-gray-400: $gray-400;
+$text-color-secondary: $secondary;
+$text-color-tertiary: $tertiary;
+
+.main-content {
+  .main-form-section.checkout {
+    .small-cart-content {
+      position: static;
+      max-width: auto;
+      width: auto;
+      height: auto;
+      top: auto;
+      right: auto;
+      background: $bg-white;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    .main-form-section.checkout {
+      .main-form {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    .main-form-section.checkout {
+      .main-form {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
