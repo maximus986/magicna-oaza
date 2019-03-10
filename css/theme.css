@@ -91,7 +91,9 @@ img {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
 
-.buzz:hover, .buzz:focus, .buzz:active {
+.buzz:hover,
+.buzz:focus,
+.buzz:active {
   -webkit-animation-name: buzz;
   animation-name: buzz;
   -webkit-animation-duration: 0.75s;
@@ -104,9 +106,27 @@ img {
 .animation {
   visibility: hidden;
   position: relative;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
   opacity: 0; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  visibility: visible;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  opacity: 1; }
 
 @keyframes slideLeft {
   0% {
@@ -2280,7 +2300,7 @@ img {
     right: -40px; }
   .main-content .ask-magzy .ask-magzy-img-wrapper {
     top: 7%;
-    left: -8%;
+    left: -3%;
     width: 21%; }
   .main-content .category-slider-wrapper {
     padding-bottom: 250px !important; }
@@ -2293,6 +2313,8 @@ img {
     .main-content .category-slider-wrapper .category-slider .owl-nav .owl-next {
       right: -32px; } }
 @media (min-width: 1400px) {
+  .main-content .ask-magzy .ask-magzy-form .ask-magzy-img-wrapper {
+    left: -7%; }
   .main-content .ask-magzy .ask-magzy-form .form-control {
     padding: 0.9rem 1rem; }
   .main-content .ask-magzy .ask-magzy-form .theme-btn {
@@ -2498,6 +2520,8 @@ img {
     line-height: 40px;
     background: #8759f2;
     cursor: pointer; }
+  .main-content .search-products-form label {
+    color: #fff; }
   .main-content .search-products-form .form-control {
     height: calc(1.5em + 1.6rem + 2.4px); }
   .main-content .search-products-form .form-group {

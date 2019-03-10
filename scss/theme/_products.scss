@@ -39,6 +39,9 @@ $text-white: $white;
       cursor: pointer;
     }
     &-form {
+      label {
+        color: $text-white;
+      }
       .form-control {
         height: calc(1.5em + 1.6rem + 2.4px);
       }

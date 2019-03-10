@@ -511,25 +511,27 @@ $(document).ready(function() {
     });
   });
 
-  // //ANIMATION
+  //Animation
 
-  // function animation() {
-  //     var windowHight = $(window).height();
-  //     var scroll = $(window).scrollTop();
-  //     $('.animation').each(function () {
-  //         var position = $(this).offset().top;
-  //         var animation = $(this).attr('data-animation');
-  //         //var delay = $(this).attr('data-delay');
-  //         if (position < scroll + windowHight - 60) {
-  //             $(this).addClass(animation);
-  //             //$(this).css('animation-delay', delay);
-  //         }
-  //     });
-  // }//end of animation function
+  function animation() {
+    const windowHight = $(window).height();
+    const scroll = $(window).scrollTop();
+    $('.animation').each(function() {
+      const position = $(this).offset().top;
+      const animation = $(this).attr('data-animation');
+      const delay = $(this).attr('data-delay');
+      if (position < scroll + windowHight - 60) {
+        $(this).addClass(animation);
+        if ($(window).width() > 990) {
+          $(this).css('animation-delay', delay);
+        }
+      }
+    });
+  } //end of animation function
 
-  // animation();
+  animation();
 
-  // $(window).scroll(function () {
-  //     animation();
-  // });
+  $(window).scroll(function() {
+    animation();
+  });
 }); //end document.ready

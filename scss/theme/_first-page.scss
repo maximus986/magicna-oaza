@@ -418,7 +418,7 @@ $text-white: $white;
     .ask-magzy {
       .ask-magzy-img-wrapper {
         top: 7%;
-        left: -8%;
+        left: -3%;
         width: 21%;
       }
     }
@@ -457,6 +457,9 @@ $text-white: $white;
   .main-content {
     .ask-magzy {
       .ask-magzy-form {
+        .ask-magzy-img-wrapper {
+          left: -7%;
+        }
         .form-control {
           padding: 0.9rem 1rem;
         }
