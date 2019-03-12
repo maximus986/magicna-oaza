@@ -14,6 +14,7 @@ $text-color-tertiary: $tertiary;
       height: auto;
       top: auto;
       right: auto;
+      background: transparent;
 
       .small-cart-products {
         height: 60vh;
@@ -164,10 +165,10 @@ $text-color-tertiary: $tertiary;
 @media (min-width: 1400px) {
   .main-content {
     .main-form-section.checkout {
-      padding-bottom: 200px;
+      padding-bottom: 280px;
       .small-cart-content {
         .small-cart-products {
-          height: 70vh;
+          height: 40vh;
         }
         .small-cart-price {
           font-size: 1.5rem;

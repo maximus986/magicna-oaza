@@ -2897,7 +2897,8 @@ img {
     width: auto;
     height: auto;
     top: auto;
-    right: auto; }
+    right: auto;
+    background: transparent; }
     .main-content .main-form-section.checkout .small-cart-content .small-cart-products {
       height: 60vh; }
       .main-content .main-form-section.checkout .small-cart-content .small-cart-products .small-cart-product-detail {
@@ -2978,9 +2979,9 @@ img {
         font-size: 1.875rem; } }
 @media (min-width: 1400px) {
   .main-content .main-form-section.checkout {
-    padding-bottom: 200px; }
+    padding-bottom: 280px; }
     .main-content .main-form-section.checkout .small-cart-content .small-cart-products {
-      height: 70vh; }
+      height: 40vh; }
     .main-content .main-form-section.checkout .small-cart-content .small-cart-price {
       font-size: 1.5rem; }
       .main-content .main-form-section.checkout .small-cart-content .small-cart-price .small-cart-total-price {
